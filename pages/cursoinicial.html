@@ -22,7 +22,6 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../css/css/bootstrap.css" />
     <link rel="stylesheet" href="../js/js/bootstrap.js" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Archivos CSS -->
     <link rel="stylesheet" href="../css/general.css" />
@@ -32,6 +31,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -107,27 +111,28 @@
     <!-- Primer Bloque de Contenido -->
     <div class="container-fluid primerBloque">
       <div class="row">
-
+    
         <div class="col-lg-6 primerBloqueContenedor1">
           <section>
-        
+    
             <h1 class="tituloPrimerBloque">
               Nivel 1
             </h1>
-        
+    
             <h3 class="subTituloPrimerBloque">
               Praxis Vertebral Tibetana
             </h3>
-        
+    
             <hr class="lineaPrimerBloque">
-        
+    
             <br>
-        
+    
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro esse quod non quidem? Pariatur magni harum nam
-              eveniet esse, reprehenderit fuga qui, nobis natus exercitationem distinctio laudantium alias inventore debitis!
+              eveniet esse, reprehenderit fuga qui, nobis natus exercitationem distinctio laudantium alias inventore
+              debitis!
             </p>
-        
+    
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
               <a href="https://www.google.com.ar/" target="_blank">
                 <button type="button" class="btn btn-secondary">
@@ -135,109 +140,166 @@
                 </button>
               </a>
             </div>
-        
+    
           </section>
         </div>
-
+    
         <div class="col-lg-6 primerBloqueContenedor2">
-          <section>
-
-            <h4>
-              Inforación del Curso
-            </h4>
-
-            <hr class="lineaPrimerBloque2">
-
-            <br>
-
-            <p>
-              Modalidad: OnLine, en vivo
-              <br>
-              Duración: más de 30hs
-              <br>
-              Requisitos: sin experiencia previa
-              <br>
-              Soporte: grupos privados en Whatsapp y Facebook 
-              <br>
-              Se entrga certificado al finalizar el curso
-            </p>
-
-            <br>
-
-            <div class="primerBloqueDevolucion">
-              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
-              </svg> -->
-              <p>
-                Si no estás contento con el curso,
-                <br>
-                te devolvemos al 100% tu compra.
-              </p>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-2"></div>
+    
+              <div class="col-8">
+    
+                <div class="position-relative primerBloqueIconoInfo">
+                  <div class="svgContainer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" fill="currentColor"
+                      class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                    </svg>
+                  </div>
+                </div>
+    
+                <section>
+                  <h4>
+                    Inforación del Curso
+                  </h4>
+    
+                  <hr class="lineaPrimerBloque2">
+    
+                  <br>
+    
+                  <p>
+                    Modalidad: OnLine, en vivo
+                    <br>
+                    Duración: más de 30hs
+                    <br>
+                    Requisitos: sin experiencia previa
+                    <br>
+                    Soporte: grupos privados en Whatsapp y Facebook
+                    <br>
+                    Se entrga certificado al finalizar el curso
+                  </p>
+    
+                  <br>
+    
+                  <div class="container primerBloqueDevolucion">
+                    <div class="row primerBloqueDevolucion2">
+                      <div class="col-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                          class="bi bi-patch-check" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                          <path
+                            d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z" />
+                        </svg>
+                      </div>
+                      <div class="col-11">
+                        <p>
+                          Si no estás contento con el curso,
+                          <br>
+                          te devolvemos al 100% tu compra.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+    
+                </section>
+              </div>
+    
+              <div class="col-2"></div>
             </div>
-
-          </section>
+          </div>
         </div>
-
+    
       </div>
     </div>
 
     <!-- Segundo Bloque de Contenido -->
     <div class="container-fluid segundoBloque">
-    
       <div class="row">
+    
         <section>
           <h3>¿Qué voy a aprender en este curso?</h3>
           <hr>
         </section>
     
-        <div class="col segundoBloqueCuadrados shadow bg-body rounded">
-          <section>
-            <img src="../multimedia/cursos/dos-manos.png" alt="Dos Manos">
-          </section>
-          <br>
-          <p>El origen de la Praxis Vertebral Tibetana.</p>
+        <div class="col-2"></div>
+    
+        <div class="col-8">
+    
+          <div class="card shadow rounded segundoBloqueCard">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../multimedia/cursos/84738-arrow.gif" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8 segundoBloqueCardTexto">
+                <div class="card-body">
+                  <p class="card-text">El origen de la Praxis Vertebral Tibetana.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="card mb-3 shadow rounded segundoBloqueCard segundoBloqueCard2">
+            <div class="row g-0">
+              <div class="col-md-8 segundoBloqueCardTexto">
+                <div class="card-body">
+                  <p class="card-text">Los fundamentos teóricos y científicos de la técnica.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="../multimedia/cursos/84738-arrow.gif" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+    
+          <div class="card mb-3 shadow rounded segundoBloqueCard">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../multimedia/cursos/84738-arrow.gif" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8 segundoBloqueCardTexto">
+                <div class="card-body">
+                  <p class="card-text">El protocolo básico de la técnica en cada sector de la columna.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="card mb-3 shadow rounded segundoBloqueCard segundoBloqueCard2">
+            <div class="row g-0">
+              <div class="col-md-8 segundoBloqueCardTexto">
+                <div class="card-body">
+                  <p class="card-text">Maniobras simples y efectivas, que proporcionan mejorías al paciente, con menos
+                    esfuerzos.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="../multimedia/cursos/84738-arrow.gif" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+    
+          <div class="card mb-3 shadow rounded segundoBloqueCard">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../multimedia/cursos/84738-arrow.gif" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8 segundoBloqueCardTexto">
+                <div class="card-body">
+                  <p class="card-text">La filosofía de la Praxis Tibetana asociada con la Bio Comprensión.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     
-        <div class="col segundoBloqueCuadrados shadow bg-body rounded">
-          <section>
-            <img src="../multimedia/cursos/dos-manos.png" alt="Dos Manos">
-          </section>
-          <br>
-          <p>Los fundamentos teóricos y científicos de la técnica.</p>
-        </div>
+        <div class="col-2"></div>
     
-        <div class="col segundoBloqueCuadrados shadow bg-body rounded">
-          <section>
-            <img src="../multimedia/cursos/dos-manos.png" alt="Dos Manos">
-          </section>
-          <br>
-          <p>El protocolo básico de la técnica en cada sector de la columna.</p>
-        </div>
       </div>
-    
-      <div class="row">
-        <div class="col"></div>
-    
-        <div class="col segundoBloqueCuadrados shadow bg-body rounded">
-          <section>
-            <img src="../multimedia/cursos/dos-manos.png" alt="Dos Manos">
-          </section>
-          <br>
-          <p>Maniobras simples y efectivas, que proporcionan mejorías al paciente, con menos esfuerzos.</p>
-        </div>
-    
-        <div class="col segundoBloqueCuadrados shadow bg-body rounded">
-          <section>
-            <img src="../multimedia/cursos/dos-manos.png" alt="Dos Manos">
-          </section>
-          <br>
-          <p>La filosofía de la Praxis Tibetana asociada con la Bio Comprensión.</p>
-        </div>
-    
-        <div class="col"></div>
-      </div>
-    
     </div>
 
     <!-- Tercer Bloque de Contenido -->
@@ -248,50 +310,82 @@
           <h3>¿Qué voy a lograr al terminar este curso?</h3>
           <hr>
         </section>
-
-        <div class="col"></div>
     
-        <div class="col segundoBloqueCuadrados shadow bg-body rounded">
-          <section>
-            <img src="../multimedia/cursos/diploma.png" alt="Diploma">
-          </section>
-          <br>
-          <p>Comprender mejor la influencia de la columna en la salud general.</p>
+        <div class="col-2"></div>
+    
+        <div class="col-8">
+    
+          <div class="card shadow rounded segundoBloqueCard">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../multimedia/cursos/84738-arrow.gif" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8 segundoBloqueCardTexto">
+                <div class="card-body">
+                  <p class="card-text">Comprender mejor la influencia de la columna en la salud general.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="card mb-3 shadow rounded segundoBloqueCard segundoBloqueCard2">
+            <div class="row g-0">
+              <div class="col-md-8 segundoBloqueCardTexto">
+                <div class="card-body">
+                  <p class="card-text">Mejorar los resultados en tu actividad terapéutica.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="../multimedia/cursos/84738-arrow.gif" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+    
+          <div class="card mb-3 shadow rounded segundoBloqueCard">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../multimedia/cursos/84738-arrow.gif" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8 segundoBloqueCardTexto">
+                <div class="card-body">
+                  <p class="card-text">Obtener una visión diferente en tu consulta.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="card mb-3 shadow rounded segundoBloqueCard segundoBloqueCard2">
+            <div class="row g-0">
+              <div class="col-md-8 segundoBloqueCardTexto">
+                <div class="card-body">
+                  <p class="card-text">Maniobras simples y efectivas, que proporcionan mejorías al paciente, con menos
+                    esfuerzos.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="../multimedia/cursos/84738-arrow.gif" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+    
+          <div class="card mb-3 shadow rounded segundoBloqueCard">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../multimedia/cursos/84738-arrow.gif" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8 segundoBloqueCardTexto">
+                <div class="card-body">
+                  <p class="card-text">Mejorar la atención a tus clientes y pacientes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     
-        <div class="col segundoBloqueCuadrados shadow bg-body rounded">
-          <section>
-            <img src="../multimedia/cursos/diploma.png" alt="Diploma">
-          </section>
-          <br>
-          <p>Mejorar los resultados en tu actividad terapéutica.</p>
-        </div>
+        <div class="col-2"></div>
     
-        <div class="col"></div>
       </div>
-    
-      <div class="row">
-        <div class="col"></div>
-    
-        <div class="col segundoBloqueCuadrados shadow bg-body rounded">
-          <section>
-            <img src="../multimedia/cursos/diploma.png" alt="Diploma">
-          </section>
-          <br>
-          <p>Obtener una visión diferente en tu consulta.</p>
-        </div>
-    
-        <div class="col segundoBloqueCuadrados shadow bg-body rounded">
-          <section>
-            <img src="../multimedia/cursos/diploma.png" alt="Diploma">
-          </section>
-          <br>
-          <p>Mejorar la atención a tus clientes y pacientes.</p>
-        </div>
-    
-        <div class="col"></div>
-      </div>
-    
     </div>
 
     <!-- Cuarto Bloque de Contenido -->
@@ -516,11 +610,11 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed botonesPrimerBloque" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                   ¿Esta formaciòn incluye certificaciòn?
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body botonesDropPrimerBloque">
                   Las personas que cursan regularmente, y cumplen con las tareas propuestas semanales, aprobadas, recibirán un
                   certificado de formación en Praxis Vertebral Tibetana, correspondiente al primer Nivel.
@@ -532,11 +626,11 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed botonesPrimerBloque" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                   ¿Cuáles son los medios de pago?
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body botonesDropPrimerBloque">
                   Al elegir como medio de pago Western Union podrás pagar con tu moneda local y el sistema hace la conversión
                   automáticamente.
@@ -563,11 +657,11 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed botonesPrimerBloque" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
                   ¿Es una formación 100% online?
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body botonesDropPrimerBloque">
                   Sí. Los primero y segundo nivel, son totalmente online, donde combinamos los contenidos en videos, y los pdf
                   descargables con los que podràs seguir las clases, y tomar anotaciones.
@@ -579,11 +673,11 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed botonesPrimerBloque" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                   ¿Qué pasa si no logro estar al día con las tareas propuestas?
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body botonesDropPrimerBloque">
                   Cada semana se pide que realices las maniobras aprendidas en el vivo, las grabes, y las subas a un grupo
                   privado de Facebook para su revisión y feedback del docente tutor a cargo.
@@ -599,11 +693,11 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed botonesPrimerBloque" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                   ¿Cuánto tiempo tendré disponible la formación?
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body botonesDropPrimerBloque">
                   Por un año desde que comience el curso.
                 </div>
@@ -614,11 +708,11 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed botonesPrimerBloque" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
                   ¿Cómo funciona la garantía?
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body botonesDropPrimerBloque">
                   Fácil: si después de iniciar la formación durante los primero 30 días ves que no es para ti... nos envías un
                   correo diciendo que pides la devolución y te la haremos de inmediato.
@@ -707,6 +801,12 @@
         </div>
       </div>
     </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   </body>
 </html>

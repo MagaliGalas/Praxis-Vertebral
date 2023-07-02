@@ -2,13 +2,13 @@
 
    .primerBloque {
     background-color: #fbfbfb; /* Color gris claro al 10% */
-    min-height: 400px;
+    min-height: 600px;
     align-items: center;
     display: flex;
    }
 
    .primerBloqueContenedor1 {
-    text-align: left;
+    align-self: center;
    }
 
    .primerBloqueContenedor1 section{
@@ -50,14 +50,38 @@
     font-weight: 400;
    }
 
-   .primerBloqueContenedor2{
-    text-align: left;
+   .primerBloqueIconoInfo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .svgContainer {
+      width: 104px;
+      height: 104px;
+      border: 2px solid #8198bc; /* Color azul al 80% */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #eaeaea; /* Color gris claro al 50% */
+      border-radius: 14.375rem;
+      position: absolute;
+      top: -80px; /* Ajusta este valor según sea necesario */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .bi-info-circle {
+      display: block;
+    }
+
+   .primerBloqueIconoInfo svg{
+      color: #8198bc; /* Color azul al 80% */
    }
 
    .primerBloqueContenedor2 section{
     background-color: #8198bc; /* Color azul al 80% */
     padding: 2rem;
-    margin: 2rem;
    }
 
    .primerBloqueContenedor2 h4{
@@ -87,16 +111,22 @@
    .primerBloqueDevolucion p{
     color: #606060; /* Color gris oscuro al 100% */
     margin-left: 1rem;
+    margin-bottom: 0rem;
    }
 
-   .primerBloqueDevolucion svg{
-    text-align: center;
+   .primerBloqueDevolucion2 {
+      align-items: center;
+   }
+
+   .primerBloqueDevolucion2 svg{
+      color: #617eab;
    }
 
 /* Segundo Bloque */
 
    .segundoBloque{
     background-color: #eaeaea; /* Color gris claro al 50% */
+    padding-bottom: 2rem;
    }
 
    .segundoBloque h3{
@@ -134,10 +164,35 @@
     text-align: center;
    }
 
+   .segundoBloqueCard{
+      border-color: transparent;
+      max-width: 540px;
+      margin: 1rem;
+      padding: 1rem;
+      min-height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .segundoBloqueCard2{
+      margin-left: 50%;
+   }
+
+   .segundoBloqueCard2 img{
+      rotate: 180deg;
+   }
+
+   .segundoBloqueCardTexto{
+      color: #606060; /* Color gris oscuro al 100% */
+      align-self: center;
+   }
+
 /* Tercer Bloque */
 
    .tercerBloque{
     background-color: #fbfbfb; /* Color gris claro al 10% */
+    padding-bottom: 2rem;
    }
 
    .tercerBloque h3{

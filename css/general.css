@@ -65,3 +65,15 @@ font-weight: 500;
 .footerRRSS{
  color: #fbfbfb; /* Color gris claro al 10% */
 }
+
+/* Botón de Whatsapp */
+.whatsapp {
+ position: fixed;
+ bottom: 50px;
+ right:30px;
+ background-color:#25d366;
+ color: #fbfbfb; /* Color gris claro al 10% */
+ border-radius:50px;
+ z-index:100;
+ filter: drop-shadow(0 1px 1px #606060);
+}
