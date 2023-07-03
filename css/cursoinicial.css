@@ -179,14 +179,30 @@
       margin-left: 50%;
    }
 
-   .segundoBloqueCard2 img{
-      rotate: 180deg;
-   }
-
    .segundoBloqueCardTexto{
       color: #606060; /* Color gris oscuro al 100% */
       align-self: center;
    }
+
+   .flechas {
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .arrow {
+      width: 100px;
+      height: 100px;
+      animation: moveArrows 4s ease-in-out infinite;
+    }
+    
+    @keyframes moveArrows {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(50%);
+      }
+    }
 
 /* Tercer Bloque */
 
@@ -314,6 +330,5 @@
     color: #606060; /* Color gris oscuro al 100% */
     opacity: 0.5;
     width: 100%;
-    /* margin-left: 0%; */
     margin: 0%;
    }
