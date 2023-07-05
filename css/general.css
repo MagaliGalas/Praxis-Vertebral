@@ -15,32 +15,32 @@
 
 /* Barra de Navegacion */
 .barraNavegacion {
- background-color: #8198bc; /* Color azul al 80% */
+ background-color: #7f96ba; /* Color azul al 80% */
  padding-top: 0 !important; /* Edite la clase por defecto de Boostrap */
  padding-bottom: 0 !important; /* Edite la clase por defecto de Boostrap */
 }
 
 .barraNavegacionTexto{
-color: #fbfbfb; /* Color gris claro al 10% */
+color: #f4f4f4; /* Color gris claro al 10% */
 font-weight: 500;
 }
 
 .nav-link:hover, .nav-link:focus{ /* Color de letra del título al pasar el mouse */
- color: #fbfbfb; /* Color gris claro al 10% */
+ color: #f4f4f4; /* Color gris claro al 10% */
 }
 
 .barraNavegacionDropDown{ /* Fondo de la lista desplegable */
- background-color: #fbfbfb; /* Color gris claro al 10% */
+ background-color: #f4f4f4; /* Color gris claro al 10% */
 }
 
 .dropdown-item{ /* Texto de cada lista desplegable */
- color: #8198bc; /* Color azul al 80% */
+ color: #7f96ba; /* Color azul al 80% */
  font-weight: 500;
 }
 
 .dropdown-item:hover{
- background-color: #8198bc; /* Color azul al 80% */
- color: #fbfbfb; /* Color gris claro al 10% */
+ background-color: #7f96ba; /* Color azul al 80% */
+ color: #f4f4f4; /* Color gris claro al 10% */
 }
 
 .dropdown:hover>.dropdown-menu { /* Accion para que al pasar el mouse se abra el menu */ 
@@ -53,17 +53,17 @@ font-weight: 500;
 
 /* Footer */
 .footer{
- background-color: #8198bc; /* Color azul al 80% */
+ background-color: #7f96ba; /* Color azul al 80% */
 }
 
 .footerTexto{
  align-self: center;
- color: #fbfbfb; /* Color gris claro al 10% */
+ color: #f4f4f4; /* Color gris claro al 10% */
  font-weight: 500;
 }
 
 .footerRRSS{
- color: #fbfbfb; /* Color gris claro al 10% */
+ color: #f4f4f4; /* Color gris claro al 10% */
 }
 
 /* Botón de Whatsapp */
@@ -72,7 +72,7 @@ font-weight: 500;
  bottom: 50px;
  right:30px;
  background-color:#25d366;
- color: #fbfbfb; /* Color gris claro al 10% */
+ color: #f4f4f4; /* Color gris claro al 10% */
  border-radius:50px;
  z-index:100;
  filter: drop-shadow(0 1px 1px #606060);

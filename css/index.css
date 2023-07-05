@@ -1,6 +1,6 @@
 /* Primer Bloque */
    .primerBloque {
-    background-color: #fbfbfb; /* Color gris claro al 10% */
+    background-color: #f4f4f4; /* Color gris claro al 10% */
     min-height: 400px;
     align-items: center;
     display: grid;
@@ -17,24 +17,24 @@
    }
 
    .subTituloPrimerBloque{
-    color: #8198bc; /* Color azul al 80% */
+    color: #7f96ba; /* Color azul al 80% */
     font-weight: 400;
    }
 
    /* Rectángulo con el título */
    .accordion-item{
     border: none;
-    background-color: #fbfbfb; /* Color gris claro al 10% */
+    background-color: #f4f4f4; /* Color gris claro al 10% */
    }
 
    /* Rectángulo con el título al desplegarse */
    .accordion-header{ 
-    background-color: #fbfbfb; /* Color gris claro al 10% */
+    background-color: #f4f4f4; /* Color gris claro al 10% */
    }
 
    /* La caja de cada texto Acordión */
    .botonesPrimerBloque{
-    background-color: #fbfbfb; /* Color gris claro al 10% */
+    background-color: #f4f4f4; /* Color gris claro al 10% */
     color: #617eab; /* Color azul al 100% */
     box-shadow: none;
     font-weight: 500;
@@ -42,14 +42,14 @@
 
    /* Cuerpo del Acordión al desplegarse */
    .botonesDropPrimerBloque{
-    background-color: transparent; /* Color gris claro al 20% */
+    background-color: transparent;
     color: #606060; /* Color gris oscuro al 100% */
    }
 
    /* Caja de cada título del acordión al no estar colapsada */
    .accordion-button:not(.collapsed){
     color: #606060; /* Color gris oscuro al 100% */
-    background-color: #c0cbdd; /* Color azul al 40% */
+    background-color: #bbc7d9; /* Color azul al 40% */
     font-weight: 500;
    }
 
@@ -68,7 +68,7 @@
 
 /* Segundo Bloque */
    .segundoBloque {
-    background-color: #eaeaea; /* Color gris claro al 50% */
+    background-color: #e6e6e6; /* Color gris claro al 50% */
    }
 
    .segundoBloqueContenedor1 {
@@ -85,13 +85,13 @@
    }
 
    .subTituloSegundoBloque{
-    color: #8198bc; /* Color azul al 80% */
+    color: #7f96ba; /* Color azul al 80% */
     font-weight: 400;
    }
 
    .parrafoSegundoBloque{
-    font-weight: 400; /* Gris oscuro al 100 */
-    color: #606060;
+    font-weight: 400; 
+    color: #606060; /* Gris oscuro al 100 */
    }
 
    .lineaDivisoriaSegundoBloque{
@@ -101,7 +101,7 @@
 
 /* Tercer Bloque */
    .tercerBloque {
-    background-color: #fbfbfb; /* Color gris claro al 10% */
+    background-color: #f4f4f4; /* Color gris claro al 10% */
    }
 
    .tituloTercerBloque{
@@ -122,11 +122,11 @@
    }
 
    .nombreTestimonio{
-    color: #a0a0a0; /* Gris oscuro al 60% */
+    color: #9c9c9c; /* Gris oscuro al 60% */
     text-align: right;
    }
 
    .localidadTestimonio{
-    color: #a0a0a0; /* Gris oscuro al 60% */
+    color: #9c9c9c; /* Gris oscuro al 60% */
     text-align: right;
    }
