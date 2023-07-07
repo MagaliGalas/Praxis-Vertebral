@@ -1,0 +1,110 @@
+/* Primer Bloque */
+
+.primerBloque {
+ background-color: #f4f4f4; /* Color gris claro al 10% */
+ padding: 2rem;
+}
+
+.primerBloque h3 {
+ color: #617eab; /* Color azul al 100% */
+ font-weight: 500;
+ text-align: center;
+}
+
+.primerBloque hr {
+ margin: auto;
+ color: #606060; /* Color gris oscuro al 100% */
+ width: 10%;
+ border-width: 1.6px;
+ margin-bottom: 2rem;
+}
+
+.primerBloque p {
+ color: #606060; /* Color gris oscuro al 100% */
+}
+
+.primerBloqueImagen{
+ align-self: center;
+ text-align: center;
+}
+
+.texto {
+ height: 100%;
+ overflow-y: auto;
+ height: 50vh;
+ align-self: center;
+}
+
+.boton1{
+ position: relative;
+}
+
+.boton1 a {
+ position: absolute;
+ bottom: 0;
+ /* right: 1%; */
+ margin: 1rem;
+}
+
+/* Modificación ScrollBar */
+.texto::-webkit-scrollbar {
+ -webkit-appearance: none;
+}
+
+.texto::-webkit-scrollbar:vertical {
+ width: 6px;
+}
+
+.texto::-webkit-scrollbar-button:increment,
+.texto::-webkit-scrollbar-button {
+ display: none;
+}
+
+.texto::-webkit-scrollbar:horizontal {
+ height: 10px;
+}
+
+.texto::-webkit-scrollbar-thumb {
+ background-color: #c9c9c9; /* Gris Oscuro al 30% */
+ border-radius: 20px;
+ border: none;
+}
+
+.texto::-webkit-scrollbar-track {
+ border-radius: 10px;
+}
+
+.btn-secondary{ /* Edite la clase de Bootstrap */
+ background-color: #617eab; /* Color azul al 100% */
+ color: #f4f4f4; /* Color gris claro al 10% */
+ font-weight: 500;
+}
+
+.btn-secondary:hover{
+ background-color: #606060; /* Color gris oscuro al 100% */
+ color: #f4f4f4; /* Color gris claro al 10% */
+ font-weight: 500;
+}
+
+/* Segundo Bloque */
+
+.segundoBloque {
+ background-color: #e6e6e6; /* Color gris claro al 50% */
+ padding: 2rem;
+}
+
+.boton2{
+ position: relative;
+}
+
+.boton2 a {
+ position: absolute;
+ bottom: 0;
+ margin: 1rem;
+}
+
+/* Animaciones */
+
+.animate__pulse{
+ animation-iteration-count: infinite; /* Repetición infinita */
+}
