@@ -1,0 +1,57 @@
+.contenidoComun h3 {
+ color: #617eab; /* Color azul al 100% */
+ font-weight: 500;
+ text-align: center;
+}
+
+.hr1 {
+ margin: auto;
+ color: #606060; /* Color gris oscuro al 100% */
+ width: 20%;
+ border-width: 1.6px;
+ margin-bottom: 5rem;
+}
+
+.titulosh5{
+ color: #617eab; /* Color azul al 100% */
+ text-decoration: solid;
+ text-decoration-color: #617eab;
+ text-decoration-line: underline;
+}
+
+.negrita{
+ font-weight: bold;
+}
+
+.contenidoComun p{
+ color: #606060; /* Gris oscuro al 100% */
+ padding-top: 1rem;
+}
+
+.bloqueImpar {
+ background-color: #f4f4f4; /* Color gris claro al 10% */
+ padding: 2rem;
+}
+
+.bloquePar {
+ background-color: #e6e6e6; /* Color gris claro al 50% */
+ padding: 2rem;
+}
+
+.hr2 {
+ margin: auto;
+ color: #606060; /* Color gris oscuro al 100% */
+ width: 40%;
+ border-width: 1.6px;
+ margin-bottom: 5rem;
+}
+
+.titulosh52{
+ color: #7f96ba; /* Color azul al 80% */
+ font-weight: 400;
+ text-align: center;
+}
+
+.bloquesVideosTexto{
+ align-self: center;
+}
