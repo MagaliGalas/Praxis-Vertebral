@@ -1,0 +1,144 @@
+.bloqueImpar {
+ background-color: #f4f4f4; /* Color gris claro al 10% */
+ padding: 2rem;
+}
+
+.bloquePar {
+ background-color: #e6e6e6; /* Color gris claro al 50% */
+ padding-bottom: 2rem;
+ padding-top: 2rem;
+ padding-left: 0%;
+ padding-right: 0%;
+ width: 100%;
+ overflow: hidden;
+}
+
+
+/* Contenedor 1 */
+.primerBloqueContenedor1 section{
+ padding: 1rem;
+}
+
+.tituloPrimerBloque{
+ color: #617eab; /* Color azul al 100% */
+}
+
+.lineaPrimerBloque{
+ margin: auto;
+ color: #606060; /* Color gris oscuro al 100% */
+ width: 30%;
+ margin-left: 0%;
+ border-width: 1.6px;
+}
+
+.primerBloqueContenedor1 p{
+ color: #606060; /* Color gris oscuro al 100% */
+}
+
+
+/* Formulario de Contacto */
+.formulario input {
+ /* width: 100%; */
+ /* padding: 10px; */
+ /* box-sizing: border-box; */
+ background: none;
+ /* outline: none; */
+ /* resize: none; */
+ border: 0;
+ /* font-family: 'Montserrat', sans-serif; */
+ transition: all .3s;
+ border-bottom: 1px solid #e6e6e6; /* Gris claro al 50% */
+ border-radius: 0%;
+}
+
+.formulario input:focus {
+ /* border-bottom: 1px solid #e6e6e6;  */
+ background: #617eab;
+ /* border: 0; */
+
+}
+
+.formulario p:before {
+ /* content: attr(type); */
+ /* display: block; */
+ /* margin: 28px 0 0; */
+ /* font-size: 14px; */
+ /* color: blue; */
+}
+
+.btn-secondary{ /* Edite la clase de Bootstrap */
+ background-color: #617eab; /* Color azul al 100% */
+ color: #f4f4f4; /* Color gris claro al 10% */
+ font-weight: 500;
+}
+
+.btn-secondary:hover{
+ background-color: #606060; /* Color gris oscuro al 100% */
+ color: #f4f4f4; /* Color gris claro al 10% */
+ font-weight: 500;
+}
+
+
+/* Contenedor 2 */
+.primerBloqueContenedor2{
+ background-color: #7f96ba; /* Color azul al 80% */
+ padding: 2rem;
+ position: absolute;
+ margin-top: 10vh;
+ margin-left: 60vw;
+ width: auto;
+}
+
+.primerBloqueContenedor2 h4{
+ color: #f4f4f4; /* Color gris claro al 10% */
+}
+
+.textoSpan{
+ font-weight: bold;
+}
+
+.primerBloqueContenedor2 p{
+ color: #f4f4f4; /* Color gris claro al 10% */
+ display: inline-block;
+ vertical-align: middle;
+ margin-bottom: 0%;
+}
+
+.primerBloqueContenedor2SegundoTexto{
+ display: inline-block;
+ margin-left: 0.5vw;
+}
+
+.primerBloqueContenedor2SegundoTexto a{
+ color: #f4f4f4; /* Color gris claro al 10% */
+ text-decoration: none;
+}
+
+.primerBloqueContenedor2 svg{
+ color: #f4f4f4; /* Color gris claro al 10% */
+ margin-right: 1rem;
+}
+
+.lineaBloqueContenedor2{
+ margin: auto;
+ color: #f4f4f4; /* Color gris claro al 10% */
+ width: 100%;
+ margin-left: 0%;
+ border-width: 1.6px;
+}
+
+.divBloqueContenedor2{
+ margin-bottom: 3vh;
+}
+
+
+/* Contenedor 3 */
+.primerBloqueUltimaColumna{
+ background-color: #e6e6e6; /* Color gris claro al 50% */
+}
+
+
+/* Segundo Bloque de Contenido */
+.map-responsive iframe{
+ width:100%;
+}
