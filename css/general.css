@@ -136,6 +136,19 @@
  animation: bounce-in 1s infinite;
 }
 
+/* CSS para agregar espacio entre los íconos */
+.footerRRSS2 .hoverable {
+  margin-right: 10px; /* Ajusta el valor según el espacio deseado entre los íconos */
+}
+
+/* Media query para aplicar el espacio solo en pantallas de celular y tablet */
+@media (max-width: 767px) {
+  .footerRRSS2 .hoverable {
+    margin-bottom: 10px; /* Agrega espacio entre filas si lo deseas */
+    margin-right: 3000; /* Elimina el espacio entre íconos en pantallas más pequeñas */
+  }
+}
+
 
 
 
