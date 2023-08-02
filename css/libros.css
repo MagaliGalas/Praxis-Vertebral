@@ -41,8 +41,7 @@
 
 .boton1 a {
  position: absolute;
- bottom: 0;
- /* right: 1%; */
+ bottom: 0; /* right: 1%; */
  margin: 1rem;
 }
 

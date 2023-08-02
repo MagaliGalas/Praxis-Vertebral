@@ -1,10 +1,18 @@
-/* Color gris claro al 10% = #f4f4f4 */ /* Color de Fondo */
+/* Color gris claro al 10% = #f4f4f4 */
+
+/* Color de Fondo */
 /* Color gris claro al 50% = #e6e6e6 */
 
-/* Color azul al 100% = #617eab */ /* Color Títulos */
-/* Color azul al 80% =#7f96ba */ /* Color Subtítulos */
+/* Color azul al 100% = #617eab */
 
-/* Color gris oscuro al 100% = #606060 */ /* Color Textos */
+/* Color Títulos */
+/* Color azul al 80% =#7f96ba */
+
+/* Color Subtítulos */
+
+/* Color gris oscuro al 100% = #606060 */
+
+/* Color Textos */
 /* Color gris oscuro al 50% = #ababab */
 /* Color Gris Oscuro al 30% = #c9c9c9 */
 
@@ -31,30 +39,31 @@
  padding-bottom: 0 !important; /* Edite la clase por defecto de Boostrap */
 }
 
-.barraNavegacionTexto{
-color: #f4f4f4; /* Color gris claro al 10% */
-font-weight: 500;
+.barraNavegacionTexto {
+ color: #f4f4f4; /* Color gris claro al 10% */
+ font-weight: 500;
 }
 
-.nav-link:hover, .nav-link:focus{ /* Color de letra del título al pasar el mouse */
+.nav-link:hover,
+.nav-link:focus { /* Color de letra del título al pasar el mouse */
  color: #f4f4f4; /* Color gris claro al 10% */
 }
 
-.barraNavegacionDropDown{ /* Fondo de la lista desplegable */
+.barraNavegacionDropDown { /* Fondo de la lista desplegable */
  background-color: #f4f4f4; /* Color gris claro al 10% */
 }
 
-.dropdown-item{ /* Texto de cada lista desplegable */
+.dropdown-item { /* Texto de cada lista desplegable */
  color: #7f96ba; /* Color azul al 80% */
  font-weight: 500;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
  background-color: #7f96ba; /* Color azul al 80% */
  color: #f4f4f4; /* Color gris claro al 10% */
 }
 
-.dropdown:hover>.dropdown-menu { /* Accion para que al pasar el mouse se abra el menu */ 
+.dropdown:hover>.dropdown-menu { /* Accion para que al pasar el mouse se abra el menu */
  display: block;
 }
 
@@ -62,29 +71,83 @@ font-weight: 500;
  pointer-events: none;
 }
 
+/* Estilos para el logo en pantallas grandes */
+#logo-image {
+ display: block;
+}
+
+/* Estilos para el logo en pantallas de tamaño de tablet y/o celular */
+@media (max-width: 768px) {
+ #logo-image {
+  display: none; /* Oculta el logo original en pantallas pequeñas */
+ }
+
+ /* Agrega estilos para mostrar la otra imagen en pantallas pequeñas */
+ @media (max-width: 768px) {
+  #logo-image {
+   display: block;
+   background-image: url('..multimedia/index/Centro_logo_rgb_fondo transparente-03_modificado_90px.png');
+   /* width: 200px; */
+   /* height: 100px; */
+  }
+ }
+}
+
+
 /* Footer */
-.footer{
+.footer {
  background-color: #7f96ba; /* Color azul al 80% */
 }
 
-.footerTexto{
+.footerTextoyRRSS {
  align-self: center;
  color: #f4f4f4; /* Color gris claro al 10% */
- font-weight: 500;
 }
 
-.footerRRSS{
+.footerRRSS {
  color: #f4f4f4; /* Color gris claro al 10% */
 }
+
+.footerRRSS2{
+ justify-content: center;
+}
+
+.footerTexto{
+ margin-top: 4vh;
+}
+
+/* CSS para el contenedor del svg */
+.svg-container {
+ display: inline-block;
+}
+
+/* CSS para la animación de bounce-in */
+@keyframes bounce-in {
+ 0%, 100% {
+   transform: scale(1);
+ }
+ 50% {
+   transform: scale(1.2);
+ }
+}
+
+/* CSS para aplicar la animación al contenedor del svg */
+.hoverable:hover .svg-container {
+ animation: bounce-in 1s infinite;
+}
+
+
+
+
 
 /* Botón de Whatsapp */
 .whatsapp {
  position: fixed;
  bottom: 50px;
- right:30px;
- background-color:#25d366;
+ right: 30px;
+ background-color: #25d366;
  color: #f4f4f4; /* Color gris claro al 10% */
- border-radius:50px;
- z-index:100;
+ border-radius: 50px;
+ z-index: 100;
  filter: drop-shadow(0 1px 1px #606060);
 }
