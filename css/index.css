@@ -99,6 +99,26 @@
     width: 50%;
    }
 
+   /* Media query para pantallas de tablet y celular */
+   @media screen and (max-width: 767px) {
+      h1, h3 {
+      text-align: center; /* Alineación al centro para pantallas de hasta 767px de ancho */
+      }
+   }
+
+   @media screen and (max-width: 767px) {
+      hr {
+         margin: 0 auto; /* Centra los elementos horizontalmente */
+      }
+   }
+
+   @media screen and (max-width: 765px) {
+      p {
+         padding-top: 10%;
+         padding-bottom: 5%;
+      }
+   }
+
 /* Tercer Bloque */
    .tercerBloque {
     background-color: #f4f4f4; /* Color gris claro al 10% */
@@ -129,4 +149,19 @@
    .localidadTestimonio{
     color: #9c9c9c; /* Gris oscuro al 60% */
     text-align: right;
+   }
+
+   /* Estilos generales para los botones del carousel */
+   .carousel-control-prev,
+   .carousel-control-next {
+   display: block; /* Mostrar los botones por defecto */
+   }
+
+   /* Media query para pantallas de tablet y celular */
+   @media screen and (max-width: 767px) {
+   /* Ocultar los botones en pantallas de hasta 767px de ancho */
+   .carousel-control-prev,
+   .carousel-control-next {
+      display: none;
+   }
    }
