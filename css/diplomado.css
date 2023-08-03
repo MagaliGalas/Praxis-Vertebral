@@ -122,6 +122,27 @@
    color: #617eab;
 }
 
+/* Estilos para pantallas pequeñas (tablets y celulares) */
+@media (max-width: 767px) {
+   .primerBloque {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   .primerBloqueContenedor1,
+   .primerBloqueContenedor2 {
+      width: 100%;
+   }
+
+   .primerBloqueContenedor2 {
+      padding-top: 25%;
+      padding-bottom: 15%;
+      position: relative;
+   }
+}
+
+
 /* Segundo Bloque */
 
 .segundoBloque{
@@ -204,6 +225,21 @@
    }
  }
 
+ /* Ocultar las imágenes en pantallas pequeñas (tablets y celulares) */
+@media (max-width: 991px) {
+   .segundoBloqueCard img {
+      display: none;
+   }
+}
+
+/* Estilos adicionales para pantallas pequeñas (opcional) */
+@media (max-width: 767px) {
+   .segundoBloqueCard2 {
+      margin-left: 0%;
+   }
+}
+
+
 /* Tercer Bloque */
 
 .tercerBloque{
@@ -261,6 +297,44 @@
 .cuartoBloqueCentrarCarrouselles{
  align-self: center;
 }
+
+/* Media query para pantallas de tablet y celular */
+@media screen and (max-width: 767px) {
+
+   /* Ocultar los botones en pantallas de hasta 767px de ancho */
+   .carousel-control-prev,
+   .carousel-control-next {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .cuartoBloqueCentrarCarrouselles .col-12 iframe {
+      /* Ajustar el ancho del iframe para que se adapte al tamaño de la pantalla */
+      width: 100%;
+      /* Ajustar el alto para mantener la relación de aspecto original */
+      height: auto;
+   }
+
+   /* Alinear los carruseles uno debajo del otro */
+   .cuartoBloqueCentrarCarrouselles .col {
+      margin-bottom: 20px;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .carousel-inner {
+     max-width: 100%;
+   }
+ }
+
+ @media screen and (max-width: 767px) {
+   .cuartoBloqueCentrarCarrouselles {
+     display: flex;
+     flex-direction: column;
+   }
+ }
+
 
 /* Quinto Bloque */
 
@@ -332,3 +406,14 @@
  width: 100%;
  margin: 0%;
 }
+
+/* Ajuste para tablet y celular */
+@media screen and (max-width: 767px) {
+   .quintoBloqueColumnas {
+     padding-left: 1rem;
+     padding-bottom: 1rem;
+     padding-right: 1rem;
+     margin-left: -1rem; /* Añadir margen negativo para compensar el padding */
+     margin-right: -1rem; /* Añadir margen negativo para compensar el padding */
+   }
+ }
