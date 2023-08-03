@@ -71,28 +71,28 @@
  pointer-events: none;
 }
 
-/* Estilos para el logo en pantallas grandes */
-#logo-image {
- display: block;
+/* Estilos para el logo en pantallas grandes (por defecto) */
+#logo-image-large {
+  display: inline-block; /* Muestra el logo en línea */
 }
 
-/* Estilos para el logo en pantallas de tamaño de tablet y/o celular */
+/* Estilos para el logo en pantallas pequeñas (tablet o celular) */
+#logo-image-small {
+  display: none; /* Oculta el logo en pantallas pequeñas */
+}
+
+/* Media query para pantallas con un ancho máximo de 768px (tabletas y dispositivos móviles) */
 @media (max-width: 768px) {
- #logo-image {
-  display: none; /* Oculta el logo original en pantallas pequeñas */
- }
-
- /* Agrega estilos para mostrar la otra imagen en pantallas pequeñas */
- @media (max-width: 768px) {
-  #logo-image {
-   display: block;
-   background-image: url('..multimedia/index/Centro_logo_rgb_fondo transparente-03_modificado_90px.png');
-   /* width: 200px; */
-   /* height: 100px; */
+  /* Oculta el logo grande en pantallas pequeñas */
+  #logo-image-large {
+    display: none;
   }
- }
-}
 
+  /* Muestra el logo pequeño en pantallas pequeñas */
+  #logo-image-small {
+    display: inline-block;
+  }
+}
 
 /* Footer */
 .footer {
@@ -148,10 +148,6 @@
     margin-right: 3000; /* Elimina el espacio entre íconos en pantallas más pequeñas */
   }
 }
-
-
-
-
 
 /* Botón de Whatsapp */
 .whatsapp {
