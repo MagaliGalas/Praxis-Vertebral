@@ -162,6 +162,19 @@
    }
 }
 
+   /* Media query para pantallas de tablet y celular */
+   @media screen and (max-width: 767px) {
+      h1, h3 {
+      text-align: center; /* Alineación al centro para pantallas de hasta 767px de ancho */
+      }
+   }
+
+   @media screen and (max-width: 767px) {
+      .lineaPrimerBloque {
+         margin: 0 auto; /* Centra los elementos horizontalmente */
+      }
+   }
+
 
 /* Segundo Bloque */
 .segundoBloque {
