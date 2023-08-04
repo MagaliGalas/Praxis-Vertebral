@@ -1,5 +1,4 @@
 /* Primer Bloque */
-
 .primerBloque {
  background-color: #f4f4f4; /* Color gris claro al 10% */
  padding: 2rem;
@@ -45,6 +44,24 @@
  margin: 1rem;
 }
 
+
+/* Segundo Bloque */
+.segundoBloque {
+ background-color: #e6e6e6; /* Color gris claro al 50% */
+ padding: 2rem;
+}
+
+.boton2{
+ position: relative;
+}
+
+.boton2 a {
+ position: absolute;
+ bottom: 0;
+ margin: 1rem;
+}
+
+
 /* Modificación ScrollBar */
 .texto::-webkit-scrollbar {
  -webkit-appearance: none;
@@ -85,25 +102,42 @@
  font-weight: 500;
 }
 
-/* Segundo Bloque */
 
-.segundoBloque {
- background-color: #e6e6e6; /* Color gris claro al 50% */
- padding: 2rem;
+/* Animaciones */
+.animate__pulse{
+ animation-iteration-count: infinite; /* Repetición infinita */
 }
 
-.boton2{
+/* Estilos para pantallas medianas (md) y inferiores */
+@media (max-width: 991px){
+ .texto{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+ }
+ }
+
+ /* Estilos para la imagen y el botón en pantallas grandes */
+.primerBloqueImagen {
  position: relative;
 }
 
-.boton2 a {
+.animate__animated.animate__pulse {
  position: absolute;
  bottom: 0;
- margin: 1rem;
+ right: 0;
+ margin: 20px;
 }
 
-/* Animaciones */
+/* Media query para pantallas de tamaño tablet o celular */
+@media screen and (max-width: 991px) {
+ /* Ajusta estos valores según tu diseño y preferencias */
+ .primerBloqueImagen {
+   text-align: center; /* Centrar el contenido en pantallas pequeñas */
+ }
 
-.animate__pulse{
- animation-iteration-count: infinite; /* Repetición infinita */
+ .animate__animated.animate__pulse {
+   position: static; /* Vuelve a posición estática para que el botón esté debajo de la imagen */
+   margin: 20px auto; /* Ajusta el margen superior e inferior para centrar el botón */
+   display: block; /* Hace que el botón ocupe todo el ancho del contenedor */
+ }
 }
