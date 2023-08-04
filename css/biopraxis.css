@@ -35,3 +35,13 @@
  .primerBloqueCentrado p{
   color: #606060; /* Color gris oscuro al 100% */
  }
+
+ /* Ajuste para tablet y celular */
+@media screen and (max-width: 767px) {
+  .primerBloqueFotos {
+    margin-bottom: 3rem;
+  }
+  .primerBloqueCentrado p{
+    text-align: center;
+  }
+}
