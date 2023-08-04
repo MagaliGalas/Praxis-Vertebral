@@ -21,6 +21,7 @@
 
 .primerBloque p {
  color: #606060; /* Color gris oscuro al 100% */
+ padding-right: 2rem;
 }
 
 .primerBloqueColumna2 {

@@ -33,38 +33,36 @@
 
 .primerBloqueContenedor1 p{
  color: #606060; /* Color gris oscuro al 100% */
+ padding-bottom: 1rem;
 }
 
 
 /* Formulario de Contacto */
 .formulario input {
- /* width: 100%; */
- /* padding: 10px; */
- /* box-sizing: border-box; */
  background: none;
- /* outline: none; */
- /* resize: none; */
  border: 0;
- /* font-family: 'Montserrat', sans-serif; */
  transition: all .3s;
  border-bottom: 1px solid #e6e6e6; /* Gris claro al 50% */
  border-radius: 0%;
 }
 
 .formulario input:focus {
- /* border-bottom: 1px solid #e6e6e6;  */
- background: #617eab;
- /* border: 0; */
-
+ background-color: #f4f4f4; /* Color gris claro al 10% */
+ border-color: #c9c9c9; /* Color Gris Oscuro al 30% */
+ box-shadow: none;
 }
 
-.formulario p:before {
- /* content: attr(type); */
- /* display: block; */
- /* margin: 28px 0 0; */
- /* font-size: 14px; */
- /* color: blue; */
+.formulario textarea{
+ background-color: #f4f4f4; /* Color gris claro al 10% */
+ border-color: #c9c9c9; /* Color Gris Oscuro al 30% */
 }
+
+.formulario textarea:focus{
+ box-shadow: none;
+ border-color: #c9c9c9; /* Color Gris Oscuro al 30% */
+ background-color: #ededed; /* Color gris claro al 30% */
+}
+
 
 .btn-secondary{ /* Edite la clase de Bootstrap */
  background-color: #617eab; /* Color azul al 100% */
@@ -141,4 +139,15 @@
 /* Segundo Bloque de Contenido */
 .map-responsive iframe{
  width:100%;
+}
+
+
+@media (max-width: 991px) {
+ .primerBloqueContenedor2 {
+   margin-top: 65vh;
+   margin-right: 2vh;
+   max-width: 100%; /* Asegura que el contenido no exceda el ancho de la pantalla */
+   margin: 5vh auto 2rem auto; /* Margen vertical ajustado y margen horizontal centrado */
+  position: relative;
+  }
 }
