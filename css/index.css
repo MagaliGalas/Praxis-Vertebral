@@ -72,11 +72,14 @@
    }
 
    .segundoBloqueContenedor1 {
-    padding: 1rem;
+    padding: 2rem;
+    align-self: center;
    }
 
    .segundoBloqueContenedor2 {
     align-self: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
    }
 
    .tituloSegundoBloque{

@@ -6,6 +6,8 @@
    align-items: center;
    display: flex;
    overflow-x: hidden;
+   /* padding-top: 6%; */
+   /* padding-bottom: 6%; */
 }
 
 .primerBloqueContenedor1 {
@@ -91,6 +93,11 @@
 .primerBloqueIconoInfo svg {
    color: #7f96ba;
    /* Color azul al 80% */
+}
+
+.primerBloqueContenedor2{
+   padding-top: 5rem;
+   padding-bottom: 3rem;
 }
 
 .primerBloqueContenedor2 section {
