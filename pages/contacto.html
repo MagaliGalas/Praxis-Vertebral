@@ -40,6 +40,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <!-- Sweet Alert -->
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -384,6 +387,62 @@
   
   <!-- ReCaptcha -->
   <script src='https://www.google.com/recaptcha/api.js?render=6Lf-uHgaAAAAAB8Ts0uB5KsTN4H7m4QoH1jAlFHp'></script>
+
+  <!-- Sweet Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.all.min.js"></script>
+  
+  <!-- Para envío de formulario a php -->
+  <script>
+    $(document).ready(function () {
+      $("#frmContact").submit(function (event) {
+        event.preventDefault();
+        grecaptcha.ready(function () {
+          grecaptcha
+            .execute('6Lf-uHgaAAAAAB8Ts0uB5KsTN4H7m4QoH1jAlFHp', { action: 'frmContact' })
+            .then(function (token) {
+              var recaptchaResponse = document.getElementById('recaptchaResponse');
+              recaptchaResponse.value = token;
+              $.ajax({
+                url: 'mail.php',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                  name: $('input[name="name"]').val(),
+                  email: $('input[name="email"]').val(),
+                  phone: $('input[name="phone"]').val(),
+                  country: $('input[name="country"]').val(),
+                  content: $('textarea[name="content"]').val(),
+                  'g-recaptcha-response': recaptchaResponse.value,
+                },
+                success: function (response) {
+                  if (response.type == 'error') {
+                    Swal.fire({
+                      title:'Error',
+                      text:'Ocurrió un error al enviar el mensaje. Intente nuevamente más tarde.',
+                      icon:'error'
+                    });
+                  } else if (response.type == 'message') {
+                    Swal.fire({
+                      title:'Listo',
+                      text:'Recibimos tu mensaje, te vamos a responder lo antes posible.',
+                      icon:'success'
+                    });
+                  }
+                  $("#mail-status").html(response.text);
+                },
+                error: function () {
+                  Swal.fire({
+                      title:'Error',
+                      text:'Ocurrió un error inesperado al enviar el mensaje. Intente nuevamente más tarde.',
+                      icon:'error'
+                    });
+                },
+              });
+            });
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
