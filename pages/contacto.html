@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
+<?php include ('constant.php'); ?>
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -144,33 +144,33 @@
             Escribime, ¡será un placer leerte!
           </p>
 
-          <form class="formulario needs-validation" novalidate>
+          <form id="frmContact" action="mail.php" method="POST" class="formulario needs-validation" novalidate>
 
             <div class="mb-3">
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido"
+              <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y Apellido"
                 required>
             </div>
 
             <div class="mb-3">
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail" required>
+              <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required>
             </div>
 
             <div class="mb-3">
-              <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Teléfono">
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono">
             </div>
 
             <div class="mb-3">
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="País de Residencia"
+              <input type="text" class="form-control" id="country" name="country" placeholder="País de Residencia"
                 required>
             </div>
 
             <div class="mb-3">
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"
+              <textarea class="form-control" id="comment-content" name="content" rows="3" placeholder="Mensaje"
                 required></textarea>
             </div>
 
           </form>
-
+          <div class="g-recaptcha" data-sitekey="6Lcs3WQUAAAAAJMiBh0EymGNlm_tNPKP4c4MTHiE"></div>
           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <a href="https://www.google.com.ar/" target="_blank">
               <button type="button" class="btn btn-secondary">Enviar</button>
@@ -381,7 +381,9 @@
   <!-- Animaciones -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script> AOS.init(); </script>
-
+  
+  <!-- ReCaptcha -->
+  <script src='https://www.google.com/recaptcha/api.js?render=6Lf-uHgaAAAAAB8Ts0uB5KsTN4H7m4QoH1jAlFHp'></script>
 </body>
 
 </html>
