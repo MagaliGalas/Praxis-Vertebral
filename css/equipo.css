@@ -177,7 +177,7 @@
 .modal-content {
  background-color: #e6e6e6 !important;
  border: none !important;
- border-radius: 30px !important;
+ border-radius: 0.375rem;
 }
 
 /* Modal Titulo */
