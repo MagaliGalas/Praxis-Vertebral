@@ -26,14 +26,14 @@
 /* Contenedor de todas las cards de cada integrante */
 .containerCard {
  width: 300px;
- height: 300px;
+ /* height: 300px; */
  margin-left: 2%;
  margin-right: 2%;
 }
 
 .containerCardVacias{
  width: auto;
- height: 300px;
+ /* height: 300px; */
 }
 
 /* Contenedor padre de cada tarjeta de cada integrante */
@@ -138,4 +138,55 @@
  top: 0;
  left: 0;
  border-radius: 1000px;
+}
+
+/* Boton del parrafo del fondo de la tarjeta */
+.cardFondoButton {
+ width: 300px;
+ margin-top: 3vh;
+ /* height: 80px; */
+ transform-style: preserve-3d;
+}
+
+.cardFondo button {
+ padding: 7px 10px;
+ /* margin-top: 1%; */
+ font-size: 1rem;
+ /* cursor: pointer; */
+ border: none;
+ box-shadow: 1px 1px 10px -5px;
+ border-radius: 30px;
+ transition: box-shadow 600ms, background-color 600ms;
+ transform: translateZ(60px);
+ /* Se mueve en el eje Z. Es para que el texto se despegue y no quede plano */
+ background-color: #617eab;
+ color: #f4f4f4 !important;
+ text-decoration: none;
+ margin-left: 2%;
+ justify-content: center;
+ text-align: center;
+}
+
+.cardFondo button:hover {
+ box-shadow: 1px 1px 15px -5px;
+ background-color: #e6e6e6;
+ color: #606060 !important;
+}
+
+/* Modal Padre */
+.modal-content {
+ background-color: #e6e6e6 !important;
+ border: none !important;
+ border-radius: 30px !important;
+}
+
+/* Modal Titulo */
+.modal-title {
+ color: #606060;
+ font-weight: bold;
+}
+
+/* Modal Body Parrafo */
+.modal-body p {
+ color: #606060;
 }
