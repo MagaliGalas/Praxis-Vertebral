@@ -144,11 +144,11 @@
           <form id="frmContact" action="mail.php" method="POST" class="formulario needs-validation" novalidate>
 
             <div class="mb-3">
-              <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y Apellido" required>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y Apellido">
             </div>
 
             <div class="mb-3">
-              <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required>
+              <input type="email" class="form-control" id="email" name="email" placeholder="E-mail">
             </div>
 
             <div class="mb-3">
@@ -156,20 +156,20 @@
             </div>
 
             <div class="mb-3">
-              <input type="text" class="form-control" id="country" name="country" placeholder="País de Residencia" required>
+              <input type="text" class="form-control" id="country" name="country" placeholder="País de Residencia">
             </div>
 
             <div class="mb-3">
-              <textarea class="form-control" id="comment-content" name="content" rows="3" placeholder="Mensaje" required></textarea>
+              <textarea class="form-control" id="comment-content" name="content" rows="3" placeholder="Mensaje"></textarea>
+            </div>
+
+            <div class="g-recaptcha" data-sitekey="6Lcs3WQUAAAAAJMiBh0EymGNlm_tNPKP4c4MTHiE"></div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end botonFormulario">
+                <button type="submit" class="btn btn-secondary">Enviar</button>
             </div>
 
           </form>
-          <div class="g-recaptcha" data-sitekey="6Lcs3WQUAAAAAJMiBh0EymGNlm_tNPKP4c4MTHiE"></div>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <a href="https://www.google.com.ar/" target="_blank">
-              <button type="button" class="btn btn-secondary">Enviar</button>
-            </a>
-          </div>
 
         </section>
       </div>
@@ -369,6 +369,7 @@
                 type: 'POST',
                 dataType: 'json',
                 data: {
+                  to: 'contacto@praxisvertebral.com.ar',
                   name: $('input[name="name"]').val(),
                   email: $('input[name="email"]').val(),
                   phone: $('input[name="phone"]').val(),
