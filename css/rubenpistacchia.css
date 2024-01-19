@@ -15,7 +15,6 @@
  margin: auto;
  color: #606060; /* Color gris oscuro al 100% */
  width: 20%;
- border-width: 1.6px;
  margin-bottom: 2rem;
 }
 
@@ -57,4 +56,10 @@
    max-height: 600px; /* Ajusta esta altura máxima según tus preferencias */
    overflow-y: auto; /* Agrega scroll vertical si el contenido excede la altura máxima */
   }
+
+  .primerBloque hr{
+    width: 60%;
+  }
 }
+
+/* --------------------------------------------------------------------------------- */

@@ -16,147 +16,142 @@
 /* Color gris oscuro al 50% = #ababab */
 /* Color Gris Oscuro al 30% = #c9c9c9 */
 
+/* --------------------------------------------------------------------------------- */
 
 /* General */
-* {
- margin: 0;
- padding: 0;
- font-family: 'Cinzel', serif;
-}
+  * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel', serif;
+  }
 
-/* Contenido Centrado General*/
-.centrarContenido {
- display: flex;
- flex-direction: row;
- justify-content: center;
- text-align: center;
-}
+  /* Contenido Centrado General*/
+  .centrarContenido {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  }
+
+/* --------------------------------------------------------------------------------- */
 
 /* Barra de Navegacion */
-.barraNavegacion {
- background-color: #7f96ba; /* Color azul al 80% */
- padding-top: 0 !important; /* Edite la clase por defecto de Boostrap */
- padding-bottom: 0 !important; /* Edite la clase por defecto de Boostrap */
-}
+  .barraNavegacion {
+  background-color: #7f96ba; /* Color azul al 80% */
+  padding-top: 0 !important; /* Edite la clase por defecto de Boostrap */
+  padding-bottom: 0 !important; /* Edite la clase por defecto de Boostrap */
+  }
 
-.barraNavegacionTexto {
- color: #f4f4f4; /* Color gris claro al 10% */
- font-weight: 500;
-}
+  .barraNavegacionTexto {
+  color: #f4f4f4; /* Color gris claro al 10% */
+  font-weight: 500;
+  }
 
-.nav-link:hover,
-.nav-link:focus { /* Color de letra del título al pasar el mouse */
- color: #f4f4f4; /* Color gris claro al 10% */
-}
+  .nav-link:hover,
+  .nav-link:focus { /* Color de letra del título al pasar el mouse */
+  color: #f4f4f4; /* Color gris claro al 10% */
+  }
 
-.barraNavegacionDropDown { /* Fondo de la lista desplegable */
- background-color: #f4f4f4; /* Color gris claro al 10% */
-}
+  .barraNavegacionDropDown { /* Fondo de la lista desplegable */
+  background-color: #f4f4f4; /* Color gris claro al 10% */
+  }
 
-.dropdown-item { /* Texto de cada lista desplegable */
- color: #7f96ba; /* Color azul al 80% */
- font-weight: 500;
-}
+  .dropdown-item { /* Texto de cada lista desplegable */
+  color: #7f96ba; /* Color azul al 80% */
+  font-weight: 500;
+  }
 
-.dropdown-item:hover {
- background-color: #7f96ba; /* Color azul al 80% */
- color: #f4f4f4; /* Color gris claro al 10% */
-}
+  .dropdown-item:hover {
+  background-color: #7f96ba; /* Color azul al 80% */
+  color: #f4f4f4; /* Color gris claro al 10% */
+  }
 
-.dropdown:hover>.dropdown-menu { /* Accion para que al pasar el mouse se abra el menu */
- display: block;
-}
+  .dropdown:hover>.dropdown-menu { /* Accion para que al pasar el mouse se abra el menu */
+  display: block;
+  }
 
-.dropdown>.dropdown-toggle:active { /* Accion para que al pasar el mouse se abra el menu */
- pointer-events: none;
-}
+  .dropdown>.dropdown-toggle:active { /* Accion para que al pasar el mouse se abra el menu */
+  pointer-events: none;
+  }
 
-/* Estilos para el logo en pantallas grandes (por defecto) */
-#logo-image-large {
-  display: inline-block; /* Muestra el logo en línea */
-}
-
-/* Estilos para el logo en pantallas pequeñas (tablet o celular) */
-#logo-image-small {
-  display: none; /* Oculta el logo en pantallas pequeñas */
-}
-
-/* Media query para pantallas con un ancho máximo de 768px (tabletas y dispositivos móviles) */
-@media (max-width: 768px) {
-  /* Oculta el logo grande en pantallas pequeñas */
+  /* Estilos para el logo en pantallas grandes (por defecto) */
   #logo-image-large {
-    display: none;
+    display: inline-block; /* Muestra el logo en línea */
   }
 
-  /* Muestra el logo pequeño en pantallas pequeñas */
+  /* Estilos para el logo en pantallas pequeñas (tablet o celular) */
   #logo-image-small {
-    display: inline-block;
+    display: none; /* Oculta el logo en pantallas pequeñas */
   }
-}
+
+  /* Media query para pantallas con un ancho máximo de 768px (tabletas y dispositivos móviles) */
+  @media (max-width: 768px) {
+    /* Oculta el logo grande en pantallas pequeñas */
+    #logo-image-large {
+      display: none;
+    }
+
+    /* Muestra el logo pequeño en pantallas pequeñas */
+    #logo-image-small {
+      display: inline-block;
+    }
+  }
+
+/* --------------------------------------------------------------------------------- */
 
 /* Footer */
-.footer {
- background-color: #7f96ba; /* Color azul al 80% */
-}
-
-.footerTextoyRRSS {
- align-self: center;
- color: #f4f4f4; /* Color gris claro al 10% */
-}
-
-.footerRRSS {
- color: #f4f4f4; /* Color gris claro al 10% */
-}
-
-.footerRRSS2{
- justify-content: center;
-}
-
-.footerTexto{
- margin-top: 4vh;
-}
-
-/* CSS para el contenedor del svg */
-.svg-container {
- display: inline-block;
-}
-
-/* CSS para la animación de bounce-in */
-@keyframes bounce-in {
- 0%, 100% {
-   transform: scale(1);
- }
- 50% {
-   transform: scale(1.2);
- }
-}
-
-/* CSS para aplicar la animación al contenedor del svg */
-.hoverable:hover .svg-container {
- animation: bounce-in 1s infinite;
-}
-
-/* CSS para agregar espacio entre los íconos */
-.footerRRSS2 .hoverable {
-  margin-right: 10px; /* Ajusta el valor según el espacio deseado entre los íconos */
-}
-
-/* Media query para aplicar el espacio solo en pantallas de celular y tablet */
-@media (max-width: 767px) {
-  .footerRRSS2 .hoverable {
-    margin-bottom: 10px; /* Agrega espacio entre filas si lo deseas */
-    margin-right: 3000; /* Elimina el espacio entre íconos en pantallas más pequeñas */
+  .footer {
+  background-color: #7f96ba; /* Color azul al 80% */
   }
-}
 
-/* Botón de Whatsapp */
-.whatsapp {
- position: fixed;
- bottom: 50px;
- right: 30px;
- background-color: #25d366;
- color: #f4f4f4; /* Color gris claro al 10% */
- border-radius: 50px;
- z-index: 100;
- filter: drop-shadow(0 1px 1px #606060);
-}
+  .footerTextoyRRSS {
+  align-self: center;
+  color: #f4f4f4; /* Color gris claro al 10% */
+  }
+
+  .footerRRSS {
+  color: #f4f4f4; /* Color gris claro al 10% */
+  }
+
+  .footerRRSS2{
+  justify-content: center;
+  }
+
+  .footerTexto{
+  margin-top: 4vh;
+  }
+
+  /* CSS para el contenedor del svg */
+  .svg-container {
+  display: inline-block;
+  }
+
+  /* CSS para la animación de bounce-in */
+  @keyframes bounce-in {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  }
+
+  /* CSS para aplicar la animación al contenedor del svg */
+  .hoverable:hover .svg-container {
+  animation: bounce-in 1s infinite;
+  }
+
+  /* CSS para agregar espacio entre los íconos */
+  .footerRRSS2 .hoverable {
+    margin-right: 10px; /* Ajusta el valor según el espacio deseado entre los íconos */
+  }
+
+  /* Media query para aplicar el espacio solo en pantallas de celular y tablet */
+  @media (max-width: 767px) {
+    .footerRRSS2 .hoverable {
+      margin-bottom: 10px; /* Agrega espacio entre filas si lo deseas */
+      margin-right: 3000; /* Elimina el espacio entre íconos en pantallas más pequeñas */
+    }
+  }
+
+/* --------------------------------------------------------------------------------- */
