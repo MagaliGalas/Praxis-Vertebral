@@ -21,18 +21,13 @@
     font-weight: 400;
    }
 
-   /* Rectángulo con el título */
+   /* La caja de cada texto Acordión */
    .accordion-item{
     border: none;
     background-color: #f4f4f4; /* Color gris claro al 10% */
    }
 
-   /* Rectángulo con el título al desplegarse */
-   .accordion-header{ 
-    background-color: #f4f4f4; /* Color gris claro al 10% */
-   }
-
-   /* La caja de cada texto Acordión */
+   /* Caja del Acordeon */
    .botonesPrimerBloque{
     background-color: #f4f4f4; /* Color gris claro al 10% */
     color: #617eab; /* Color azul al 100% */
@@ -49,7 +44,7 @@
    /* Caja de cada título del acordión al no estar colapsada */
    .accordion-button:not(.collapsed){
     color: #606060; /* Color gris oscuro al 100% */
-    background-color: #bbc7d9; /* Color azul al 40% */
+    background-color: #e6e6e6; /* Color gris claro al 50% */
     font-weight: 500;
    }
 
@@ -61,36 +56,52 @@
    .acordionLinea{
     margin: auto;
     color: #606060; /* Color gris oscuro al 100% */
-    opacity: 0.5;
+    opacity: 0.2;
     width: 100%;
     margin-left: 0%;
    }
 
+   /* Botón + Info */
    .botonAcordion{
-      width: 30px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      border: none;
    }
 
-   .btn-primary {
-      /* Edite la clase de Bootstrap */
-      background-color: #e6e6e6; /* Color gris claro al 50% */
-      border: none;
-      padding: 0;
-      margin: 0;
-      background-color: transparent;
+   .botonAcordion a{
+      text-decoration: none;
+      color: inherit;
+   }
+
+    .btn-secondary { /* Edite la clase de Bootstrap */
+      background-color: #617eab; /* Color azul al 100% */
+      color: #f4f4f4; /* Color gris claro al 10% */
+      font-weight: 500;
    }
    
-   .btn-primary:hover {
-      background-color: #e6e6e6; /* Color gris claro al 50% */
+   .btn-secondary:hover {
+      background-color: #606060; /* Color gris oscuro al 100% */
+      color: #f4f4f4; /* Color gris claro al 10% */
+      font-weight: 500;
    }
 
-   .animate__animated.animate__headShake {
-      --animate-duration: 2s;
-    }
+   /* Media query para pantallas de tablet y celular */
+   @media screen and (max-width: 767px) {
+      .primerBloqueContenedor1 {
+         margin-top: 2rem;
+         margin-bottom: 2rem;
+      }
 
+      .accordion{
+         margin-bottom: 2rem;
+      }
+
+      .botonAcordion{
+         margin-top: 0.5rem;
+         width: fit-content;
+         justify-self: self-end;
+      }
+   }
+
+/* --------------------------------------------------------------------------------- */
 
 /* Segundo Bloque */
    .segundoBloque {
@@ -125,28 +136,30 @@
 
    .lineaDivisoriaSegundoBloque{
     color: #606060; /* Gris oscuro al 100% */
-    width: 50%;
+    width: 70%;
    }
 
    /* Media query para pantallas de tablet y celular */
    @media screen and (max-width: 767px) {
-      h1, h3 {
-      text-align: center; /* Alineación al centro para pantallas de hasta 767px de ancho */
+      .segundoBloqueContenedor2 h1, h3 {
+      text-align: center;
+      }
+
+      .segundoBloqueContenedor2 hr{
+         margin: 0 auto;
+         width: 50%;
+      }
+
+      .segundoBloqueContenedor2 p{
+         margin-top: 2rem;
+      }
+
+      .segundoBloqueContenedor2{
+         padding-top: 0;
       }
    }
 
-   @media screen and (max-width: 767px) {
-      hr {
-         margin: 0 auto; /* Centra los elementos horizontalmente */
-      }
-   }
-
-   @media screen and (max-width: 765px) {
-      p {
-         padding-top: 10%;
-         padding-bottom: 5%;
-      }
-   }
+/* --------------------------------------------------------------------------------- */
 
 /* Tercer Bloque */
    .tercerBloque {
@@ -187,10 +200,13 @@
    }
 
    /* Media query para pantallas de tablet y celular */
-   @media screen and (max-width: 767px) {
-   /* Ocultar los botones en pantallas de hasta 767px de ancho */
-   .carousel-control-prev,
-   .carousel-control-next {
-      display: none;
-   }
+   @media screen and (max-width: 767px) { /* Ocultar los botones en pantallas de hasta 767px de ancho */
+      .carousel-control-prev,
+      .carousel-control-next {
+         display: none;
+      }
+
+      .lineaDivisoriaTestimonial{
+         width: 50%;
+      }      
    }
