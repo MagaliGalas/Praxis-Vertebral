@@ -21,14 +21,13 @@
    color: #606060; /* Color gris oscuro al 100% */
 }
 
-.btn-secondary {
-   /* Edite la clase de Bootstrap */
+.btn-secondary { /* Edite la clase de Bootstrap */
    background-color: #617eab; /* Color azul al 100% */
    color: #f4f4f4; /* Color gris claro al 10% */
    font-weight: 500;
 }
 
-.primerBloqueBoton{
+.primerBloqueBoton {
    margin-top: 2rem;
 }
 
@@ -44,7 +43,6 @@
    opacity: 0.5;
    width: 50%;
    margin-left: 0%;
-   border-width: 1.6px;
 }
 
 .tituloPrimerBloque {
@@ -73,8 +71,7 @@
    background-color: #e6e6e6; /* Color gris claro al 50% */
    border-radius: 14.375rem;
    position: absolute;
-   top: -80px;
-   /* Ajusta este valor según sea necesario */
+   top: -80px; /* Ajusta este valor según sea necesario */
    left: 50%;
    transform: translateX(-50%);
 }
@@ -87,7 +84,7 @@
    color: #7f96ba; /* Color azul al 80% */
 }
 
-.primerBloqueContenedor2{
+.primerBloqueContenedor2 {
    padding-top: 5rem;
    padding-bottom: 3rem;
 }
@@ -108,7 +105,6 @@
    opacity: 0.5;
    width: 46%;
    margin-left: 0%;
-   border-width: 1.6px;
 }
 
 .primerBloqueContenedor2 p {
@@ -153,21 +149,27 @@
       padding-bottom: 15%;
       position: relative;
    }
+
+   h1,
+   h3 {
+      text-align: center; /* Alineación al centro para pantallas de hasta 767px de ancho */
+   }
+
+   .lineaPrimerBloque {
+      margin: 0 auto; /* Centra los elementos horizontalmente */
+      width: 70%;
+   }
+
+   .primerBloqueContenedor1 section{
+      padding: 1rem;
+   }
+
+   .primerBloqueBoton{
+      justify-content: end;
+   }
 }
 
-   /* Media query para pantallas de tablet y celular */
-   @media screen and (max-width: 767px) {
-      h1, h3 {
-      text-align: center; /* Alineación al centro para pantallas de hasta 767px de ancho */
-      }
-   }
-
-   @media screen and (max-width: 767px) {
-      .lineaPrimerBloque {
-         margin: 0 auto; /* Centra los elementos horizontalmente */
-      }
-   }
-
+/* --------------------------------------------------------------------------------- */
 
 /* Segundo Bloque */
 .segundoBloque {
@@ -186,24 +188,25 @@
    margin: auto;
    color: #606060; /* Color gris oscuro al 100% */
    width: 30%;
-   border-width: 1.6px;
    margin-bottom: 3rem;
 }
 
-.videoSegundoBloque{
+.videoSegundoBloque {
    text-align: center;
 }
 
-/* Estilos para pantallas medianas (md) y inferiores */
 @media (max-width: 991px) {
-   /* Centrar los iframes */
-   .videoSegundoBloque iframe {
-     /* margin: 0 auto; */
-     width: 100%;
-     height: 23vh;
+   .videoSegundoBloque iframe { /* Centrar los iframes */
+      width: 100%;
+      height: 23vh;
    }
-  }
 
+   .segundoBloque hr{
+      width: 60%;
+   }
+}
+
+/* --------------------------------------------------------------------------------- */
 
 /* Tercer Bloque */
 .tercerBloque {
@@ -222,7 +225,6 @@
    margin: auto;
    color: #606060; /* Color gris oscuro al 100% */
    width: 30%;
-   border-width: 1.6px;
    margin-bottom: 2rem;
 }
 
@@ -246,7 +248,6 @@
    display: block; /* Mostrar los botones por defecto */
 }
 
-/* Media query para pantallas de tablet y celular */
 @media screen and (max-width: 767px) {
 
    /* Ocultar los botones en pantallas de hasta 767px de ancho */
@@ -254,35 +255,27 @@
    .carousel-control-next {
       display: none;
    }
-}
 
-@media screen and (max-width: 767px) {
    .tercerBloqueCentrarCarrouselles .col-12 iframe {
-      /* Ajustar el ancho del iframe para que se adapte al tamaño de la pantalla */
-      width: 100%;
-      /* Ajustar el alto para mantener la relación de aspecto original */
-      height: auto;
+      width: 100%; /* Ajustar el ancho del iframe para que se adapte al tamaño de la pantalla */
+      height: auto; /* Ajustar el alto para mantener la relación de aspecto original */
    }
 
-   /* Alinear los carruseles uno debajo del otro */
-   .tercerBloqueCentrarCarrouselles .col {
+   .tercerBloqueCentrarCarrouselles .col { /* Alinear los carruseles uno debajo del otro */
       margin-bottom: 20px;
    }
+
+   .carousel-inner {
+      max-width: 100%;
+   }
+
+   .tercerBloqueCentrarCarrouselles {
+      display: flex;
+      flex-direction: column;
+   }
 }
 
-@media screen and (max-width: 767px) {
-   .carousel-inner {
-     max-width: 100%;
-   }
- }
-
- @media screen and (max-width: 767px) {
-   .tercerBloqueCentrarCarrouselles {
-     display: flex;
-     flex-direction: column;
-   }
- }
- 
+/* --------------------------------------------------------------------------------- */
 
 /* Cuarto Bloque */
 .cuartoBloque {
@@ -300,7 +293,6 @@
    margin: auto;
    color: #606060; /* Color gris oscuro al 100% */
    width: 20%;
-   border-width: 1.6px;
    margin-bottom: 2rem;
 }
 
@@ -349,18 +341,21 @@
 
 .acordionLinea {
    color: #606060; /* Color gris oscuro al 100% */
-   opacity: 0.5;
+   opacity: 0.2;
    width: 100%;
    margin: 0%;
 }
 
-/* Ajuste para tablet y celular */
 @media screen and (max-width: 767px) {
    .cuartoBloqueColumnas {
-     padding-left: 1rem;
-     padding-bottom: 1rem;
-     padding-right: 1rem;
-     margin-left: -1rem; /* Añadir margen negativo para compensar el padding */
-     margin-right: -1rem; /* Añadir margen negativo para compensar el padding */
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+      padding-right: 1rem;
    }
- }
+
+   .cuartoBloqueLinea{
+      width: 60%;
+   }
+}
+
+/* --------------------------------------------------------------------------------- */
