@@ -1,13 +1,12 @@
 /* Primer Bloque */
 .primerBloque {
-   background-color: #f4f4f4;
-   /* Color gris claro al 10% */
+   background-color: #f4f4f4; /* Color gris claro al 10% */
    min-height: 600px;
    align-items: center;
    display: flex;
    overflow-x: hidden;
-   /* padding-top: 6%; */
-   /* padding-bottom: 6%; */
+   padding-top: 2%;
+   padding-bottom: 2%;
 }
 
 .primerBloqueContenedor1 {
@@ -19,31 +18,29 @@
 }
 
 .primerBloqueContenedor1 p {
-   color: #606060;
-   /* Color gris oscuro al 100% */
+   color: #606060; /* Color gris oscuro al 100% */
 }
 
 .btn-secondary {
    /* Edite la clase de Bootstrap */
-   background-color: #617eab;
-   /* Color azul al 100% */
-   color: #f4f4f4;
-   /* Color gris claro al 10% */
+   background-color: #617eab; /* Color azul al 100% */
+   color: #f4f4f4; /* Color gris claro al 10% */
    font-weight: 500;
 }
 
+.primerBloqueBoton{
+   margin-top: 2rem;
+}
+
 .btn-secondary:hover {
-   background-color: #606060;
-   /* Color gris oscuro al 100% */
-   color: #f4f4f4;
-   /* Color gris claro al 10% */
+   background-color: #606060; /* Color gris oscuro al 100% */
+   color: #f4f4f4; /* Color gris claro al 10% */
    font-weight: 500;
 }
 
 .lineaPrimerBloque {
    margin: auto;
-   color: #606060;
-   /* Color gris oscuro al 100% */
+   color: #606060; /* Color gris oscuro al 100% */
    opacity: 0.5;
    width: 50%;
    margin-left: 0%;
@@ -51,14 +48,12 @@
 }
 
 .tituloPrimerBloque {
-   color: #617eab;
-   /* Color azul al 100% */
+   color: #617eab; /* Color azul al 100% */
    font-weight: 500;
 }
 
 .subTituloPrimerBloque {
-   color: #7f96ba;
-   /* Color azul al 80% */
+   color: #7f96ba; /* Color azul al 80% */
    font-weight: 400;
 }
 
@@ -71,13 +66,11 @@
 .svgContainer {
    width: 104px;
    height: 104px;
-   border: 2px solid #7f96ba;
-   /* Color azul al 80% */
+   border: 2px solid #7f96ba; /* Color azul al 80% */
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: #e6e6e6;
-   /* Color gris claro al 50% */
+   background-color: #e6e6e6; /* Color gris claro al 50% */
    border-radius: 14.375rem;
    position: absolute;
    top: -80px;
@@ -91,8 +84,7 @@
 }
 
 .primerBloqueIconoInfo svg {
-   color: #7f96ba;
-   /* Color azul al 80% */
+   color: #7f96ba; /* Color azul al 80% */
 }
 
 .primerBloqueContenedor2{
@@ -101,21 +93,18 @@
 }
 
 .primerBloqueContenedor2 section {
-   background-color: #7f96ba;
-   /* Color azul al 80% */
+   background-color: #7f96ba; /* Color azul al 80% */
    padding: 2rem;
 }
 
 .primerBloqueContenedor2 h4 {
-   color: #f4f4f4;
-   /* Color gris claro al 10% */
+   color: #f4f4f4; /* Color gris claro al 10% */
    font-weight: 500;
 }
 
 .lineaPrimerBloque2 {
    margin: auto;
-   color: #f4f4f4;
-   /* Color gris claro al 10% */
+   color: #f4f4f4; /* Color gris claro al 10% */
    opacity: 0.5;
    width: 46%;
    margin-left: 0%;
@@ -123,20 +112,17 @@
 }
 
 .primerBloqueContenedor2 p {
-   color: #f4f4f4;
-   /* Color gris claro al 10% */
+   color: #f4f4f4; /* Color gris claro al 10% */
    font-weight: 400;
 }
 
 .primerBloqueDevolucion {
-   background-color: #f4f4f4;
-   /* Color gris claro al 10% */
+   background-color: #f4f4f4; /* Color gris claro al 10% */
    border-radius: 0.375rem;
 }
 
 .primerBloqueDevolucion p {
-   color: #606060;
-   /* Color gris oscuro al 100% */
+   color: #606060; /* Color gris oscuro al 100% */
    margin-left: 1rem;
    margin-bottom: 0rem;
 }
@@ -185,14 +171,12 @@
 
 /* Segundo Bloque */
 .segundoBloque {
-   /* Color gris claro al 50% */
-   background-color: #e6e6e6;
-   padding-bottom: 2rem;
+   background-color: #e6e6e6; /* Color gris claro al 50% */
+   padding-bottom: 4rem;
+   padding-top: 3rem;
 }
 
 .segundoBloque h3 {
-   margin-top: 2rem;
-   /* Color azul al 100% */
    color: #617eab;
    font-weight: 500;
    text-align: center;
@@ -200,162 +184,56 @@
 
 .segundoBloque hr {
    margin: auto;
-   color: #606060;
-   /* Color gris oscuro al 100% */
+   color: #606060; /* Color gris oscuro al 100% */
    width: 30%;
    border-width: 1.6px;
-   margin-bottom: 2rem;
+   margin-bottom: 3rem;
 }
 
-.segundoBloqueCuadrados {
-   background-color: #f4f4f4;
-   /* Color gris claro al 10% */
-   padding: 1rem;
-   margin-left: 4rem;
-   margin-right: 4rem;
-   margin-bottom: 4rem;
-   margin-top: 1rem;
-}
-
-.segundoBloqueCuadrados section {
-   text-align: center;
-   margin-top: 1rem;
-   margin-bottom: 1rem;
-}
-
-.segundoBloqueCuadrados p {
-   color: #606060;
-   /* Color gris oscuro al 100% */
+.videoSegundoBloque{
    text-align: center;
 }
 
-.segundoBloqueCard {
-   border-color: transparent;
-   max-width: 540px;
-   margin: 1rem;
-   padding: 1rem;
-   min-height: 160px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-.segundoBloqueCard2 {
-   margin-left: 50%;
-}
-
-.segundoBloqueCardTexto {
-   color: #606060;
-   /* Color gris oscuro al 100% */
-   align-self: center;
-}
-
-.flechas {
-   overflow: hidden;
-   position: relative;
-}
-
-.arrow {
-   width: 100px;
-   height: 100px;
-   animation: moveArrows 4s ease-in-out infinite;
-}
-
-@keyframes moveArrows {
-
-   0%,
-   100% {
-      transform: translateX(0);
-   }
-
-   50% {
-      transform: translateX(50%);
-   }
-}
-
-/* Ocultar las imágenes en pantallas pequeñas (tablets y celulares) */
-@media (max-width: 991px) {
-   .segundoBloqueCard img {
-      display: none;
-   }
-}
-
-/* Estilos adicionales para pantallas pequeñas (opcional) */
-@media (max-width: 767px) {
-   .segundoBloqueCard2 {
-      margin-left: 0%;
-   }
-}
 
 /* Tercer Bloque */
 .tercerBloque {
-   background-color: #f4f4f4;
-   /* Color gris claro al 10% */
-   padding-bottom: 2rem;
+   background-color: #f4f4f4; /* Color gris claro al 10% */
+   padding-bottom: 3rem;
 }
 
 .tercerBloque h3 {
    margin-top: 2rem;
-   color: #617eab;
-   /* Color azul al 100% */
+   color: #617eab; /* Color azul al 100% */
    font-weight: 500;
    text-align: center;
 }
 
 .tercerBloque hr {
    margin: auto;
-   color: #606060;
-   /* Color gris oscuro al 100% */
+   color: #606060; /* Color gris oscuro al 100% */
    width: 30%;
    border-width: 1.6px;
    margin-bottom: 2rem;
 }
 
-/* Cuarto Bloque */
-.cuartoBloque {
-   background-color: #e6e6e6;
-   /* Color gris claro al 50% */
-   padding-bottom: 3rem;
-}
-
-.cuartoBloque h3 {
-   margin-top: 2rem;
-   color: #617eab;
-   /* Color azul al 100% */
-   font-weight: 500;
-   text-align: center;
-}
-
-.cuartoBloque hr {
-   margin: auto;
-   color: #606060;
-   /* Color gris oscuro al 100% */
-   width: 30%;
-   border-width: 1.6px;
-   margin-bottom: 2rem;
-}
-
-.cuartoBloqueParrafoTestimonios {
+.tercerBloqueParrafoTestimonios {
    text-align: left;
-   color: #606060;
-   /* Color gris oscuro al 100% */
+   color: #606060; /* Color gris oscuro al 100% */
 }
 
-.cuartoBloqueNombreTestimonio {
+.tercerBloqueNombreTestimonio {
    text-align: right;
-   color: #9c9c9c;
-   /* Gris oscuro al 60% */
+   color: #9c9c9c; /* Gris oscuro al 60% */
 }
 
-.cuartoBloqueCentrarCarrouselles {
+.tercerBloqueCentrarCarrouselles {
    align-self: center;
 }
 
 /* Estilos generales para los botones del carousel de testimonios */
 .carousel-control-prev,
 .carousel-control-next {
-   display: block;
-   /* Mostrar los botones por defecto */
+   display: block; /* Mostrar los botones por defecto */
 }
 
 /* Media query para pantallas de tablet y celular */
@@ -369,7 +247,7 @@
 }
 
 @media screen and (max-width: 767px) {
-   .cuartoBloqueCentrarCarrouselles .col-12 iframe {
+   .tercerBloqueCentrarCarrouselles .col-12 iframe {
       /* Ajustar el ancho del iframe para que se adapte al tamaño de la pantalla */
       width: 100%;
       /* Ajustar el alto para mantener la relación de aspecto original */
@@ -377,7 +255,7 @@
    }
 
    /* Alinear los carruseles uno debajo del otro */
-   .cuartoBloqueCentrarCarrouselles .col {
+   .tercerBloqueCentrarCarrouselles .col {
       margin-bottom: 20px;
    }
 }
@@ -389,37 +267,34 @@
  }
 
  @media screen and (max-width: 767px) {
-   .cuartoBloqueCentrarCarrouselles {
+   .tercerBloqueCentrarCarrouselles {
      display: flex;
      flex-direction: column;
    }
  }
  
 
-/* Quinto Bloque */
-.quintoBloque {
-   background-color: #f4f4f4;
-   /* Color gris claro al 10% */
+/* Cuarto Bloque */
+.cuartoBloque {
+   background-color: #f4f4f4; /* Color gris claro al 10% */
 }
 
-.quintoBloque h3 {
+.cuartoBloque h3 {
    margin-top: 2rem;
-   color: #617eab;
-   /* Color azul al 100% */
+   color: #617eab; /* Color azul al 100% */
    font-weight: 500;
    text-align: center;
 }
 
-.quintoBloqueLinea {
+.cuartoBloqueLinea {
    margin: auto;
-   color: #606060;
-   /* Color gris oscuro al 100% */
+   color: #606060; /* Color gris oscuro al 100% */
    width: 20%;
    border-width: 1.6px;
    margin-bottom: 2rem;
 }
 
-.quintoBloqueColumnas {
+.cuartoBloqueColumnas {
    padding-left: 6rem;
    padding-bottom: 2rem;
    padding-right: 6rem;
@@ -428,22 +303,18 @@
 /* Rectángulo con el título */
 .accordion-item {
    border: none;
-   background-color: #f4f4f4;
-   /* Color gris claro al 10% */
+   background-color: #f4f4f4; /* Color gris claro al 10% */
 }
 
 /* Rectángulo con el título al desplegarse */
 .accordion-header {
-   background-color: #f4f4f4;
-   /* Color gris claro al 10% */
+   background-color: #f4f4f4; /* Color gris claro al 10% */
 }
 
 /* La caja de cada texto Acordión */
 .botonesPrimerBloque {
-   background-color: #f4f4f4;
-   /* Color gris claro al 10% */
-   color: #617eab;
-   /* Color azul al 100% */
+   background-color: #f4f4f4; /* Color gris claro al 10% */
+   color: #617eab; /* Color azul al 100% */
    box-shadow: none;
    font-weight: 500;
 }
@@ -451,16 +322,13 @@
 /* Cuerpo del Acordión al desplegarse */
 .botonesDropPrimerBloque {
    background-color: transparent;
-   color: #606060;
-   /* Color gris oscuro al 100% */
+   color: #606060; /* Color gris oscuro al 100% */
 }
 
 /* Caja de cada título del acordión al no estar colapsada */
 .accordion-button:not(.collapsed) {
-   color: #606060;
-   /* Color gris oscuro al 100% */
-   background-color: #bbc7d9;
-   /* Color azul al 40% */
+   color: #606060; /* Color gris oscuro al 100% */
+   background-color: #bbc7d9; /* Color azul al 40% */
    font-weight: 500;
 }
 
@@ -470,8 +338,7 @@
 }
 
 .acordionLinea {
-   color: #606060;
-   /* Color gris oscuro al 100% */
+   color: #606060; /* Color gris oscuro al 100% */
    opacity: 0.5;
    width: 100%;
    margin: 0%;
@@ -479,7 +346,7 @@
 
 /* Ajuste para tablet y celular */
 @media screen and (max-width: 767px) {
-   .quintoBloqueColumnas {
+   .cuartoBloqueColumnas {
      padding-left: 1rem;
      padding-bottom: 1rem;
      padding-right: 1rem;
