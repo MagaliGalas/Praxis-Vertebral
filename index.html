@@ -559,6 +559,53 @@
     });
   </script>
 
+  <!-- Modal (Popup) -->
+  <div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content custom-popup">
+  
+        <!-- Título del popup -->
+        <h2 class="modal-title" id="popupModalLabel">MasterClass Gratuita</h2>
+  
+        <!-- Subtítulo del popup -->
+        <h5 class="custom-popup-subtitulo">
+          "Praxis Vertebral Tibetana ®,
+          <br>
+          un camino transformador"
+        </h5>
+  
+        <!-- Texto del popup -->
+        <h6 class="custom-popup-texto">
+          <strong>Día: </strong>Miércoles 24 de enero de 2024
+          <br>
+          <strong>Horario: </strong>16hs
+          <br>
+          <strong>Modalidad: </strong>OnLine, a través de Zoom
+        </h6>
+  
+        <!-- Contenedor para centrar el botón horizontalmente -->
+        <div class="btn-container">
+          <!-- Botón personalizado del popup -->
+          <a href="https://cursos.praxisvertebral.com/inscripcion-mc-240124/" target="_blank">
+            <button type="button" class="btn animate__animated animate__pulse animate__infinite	infinite">
+              Inscribirme
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script para abrir automáticamente el popup al cargar la página -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var myModal = new bootstrap.Modal(document.getElementById('popupModal'), {
+        keyboard: false
+      });
+      myModal.show();
+    });
+  </script>
+
 </body>
 
 </html>

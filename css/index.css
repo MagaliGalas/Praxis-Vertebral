@@ -212,3 +212,56 @@
    }
 
 /* --------------------------------------------------------------------------------- */
+
+.custom-popup {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-image: url('../multimedia/index/Buda\ 5\ Modificado 2.png');
+   background-size: cover;
+   padding: 30px;
+   max-width: 600px;
+   width: 100%;
+   text-align: start;
+   border-radius: 30px;
+   border: none;
+}
+
+/* Estilos para los colores específicos */
+.custom-popup h2 {
+   color: #617eab; /* Color azul al 100% */
+   font-weight: 600;
+   padding-bottom: 1rem;
+}
+
+.custom-popup-subtitulo {
+   color: #606060; /* Gris oscuro al 100% */
+   font-weight: 400;
+   padding-bottom: 1rem;
+   line-height: 1.5;
+}
+
+.custom-popup-texto {
+   color: #606060; /* Gris oscuro al 100% */
+   font-weight: 500;
+   padding-bottom: 1rem;
+   line-height: 1.5;
+}
+
+.custom-popup button {
+   background-color: #617eab; /* Color azul al 100% */
+   color: #f4f4f4; /* Color gris claro al 10% */
+   border: none;
+   padding: 10px 20px;
+   margin-top: 10px;
+   border-radius: 5px;
+   cursor: pointer;
+   width: 30%;
+}  
+
+.custom-popup button:hover {
+   background-color: #606060; /* Color gris oscuro al 100% */
+   color: #f4f4f4; /* Color gris claro al 10% */
+   font-weight: 500;
+}
