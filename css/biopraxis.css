@@ -35,7 +35,7 @@
   }
 
   /* Ajuste para tablet y celular */
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 991px) {
     .primerBloqueFotos {
       margin-bottom: 3rem;
     }
@@ -46,11 +46,17 @@
     }
 
     .primerBloque hr{
-      width: 23%;
+      width: 15%;
     }
 
     .primerBloque section{
       margin-bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: 767px){
+    .primerBloque hr{
+      width: 23%;
     }
   }
 
