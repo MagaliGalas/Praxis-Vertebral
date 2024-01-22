@@ -77,7 +77,7 @@
 /* --------------------------------------------------------------------------------- */
 
   /* Estilos para pantallas grandes (lg) y superiores */
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
 
     /* Cambiar el orden para el segundo bloque */
     .bloquePar .col-lg-5 {
@@ -95,6 +95,24 @@
 
     .bloquesVideosTexto {
       padding-bottom: 2rem;
+    }
+
+    .hr1{
+      width: 40%;
+    }
+
+    .hr2{
+      width: 80%;
+    }
+
+    .hr3{
+      width: 65%;
+    }
+  }
+
+  @media (max-width: 767px){
+    .hr1{
+      width: 80%;
     }
   }
 
