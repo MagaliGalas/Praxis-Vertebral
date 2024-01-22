@@ -130,7 +130,7 @@
   margin-bottom: 3vh;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .primerBloqueContenedor2 {
       margin-top: 65vh;
       margin-right: 2vh;
@@ -140,7 +140,7 @@
       }
 
       .lineaPrimerBloque{
-        width: 50%;
+        width: 25%;
       }
 
       .botonFormulario{
@@ -149,6 +149,12 @@
 
       .bloqueImpar{
         padding: 1rem;
+      }
+    }
+
+    @media (max-width: 767px){
+      .lineaPrimerBloque{
+        width: 50%;
       }
     }
 
