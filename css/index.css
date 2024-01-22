@@ -84,7 +84,7 @@
    }
 
    /* Media query para pantallas de tablet y celular */
-   @media screen and (max-width: 767px) {
+   @media screen and (max-width: 991px) {
       .primerBloqueContenedor1 {
          margin-top: 2rem;
          margin-bottom: 2rem;
@@ -150,12 +150,18 @@
          width: 50%;
       }
 
-      .segundoBloqueContenedor2 p{
-         margin-top: 2rem;
-      }
-
       .segundoBloqueContenedor2{
          padding-top: 0;
+      }
+   }
+
+   @media screen and (max-width: 991px) {
+      .segundoBloqueContenedor2 hr{
+         width: 60%;
+      }
+
+      .segundoBloqueContenedor2 p{
+         margin-top: 2rem;
       }
    }
 
@@ -199,8 +205,8 @@
    display: block; /* Mostrar los botones por defecto */
    }
 
-   /* Media query para pantallas de tablet y celular */
-   @media screen and (max-width: 767px) { /* Ocultar los botones en pantallas de hasta 767px de ancho */
+   /* Ocultar los botones en pantallas de hasta 991px de ancho */
+   @media screen and (max-width: 991px) {
       .carousel-control-prev,
       .carousel-control-next {
          display: none;
