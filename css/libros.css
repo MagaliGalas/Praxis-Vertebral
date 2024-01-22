@@ -50,6 +50,12 @@
     }
 
     .primerBloque hr{
+      width: 30%;
+    }
+  }
+
+  @media (max-width: 767px){
+    .primerBloque hr{
       width: 45%;
     }
   }
