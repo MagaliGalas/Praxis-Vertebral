@@ -265,3 +265,17 @@
    color: #f4f4f4; /* Color gris claro al 10% */
    font-weight: 500;
 }
+
+   /* Media query para pantallas de tablet y celular */
+   @media screen and (max-width: 767px) { 
+      .custom-popup button{
+         width: 50%;
+      }
+
+      .custom-popup{
+         max-width: 390px;
+         background-size: auto;
+      }
+   }
+
+/* --------------------------------------------------------------------------------- */
