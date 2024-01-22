@@ -248,7 +248,7 @@
    display: block; /* Mostrar los botones por defecto */
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
 
    /* Ocultar los botones en pantallas de hasta 767px de ancho */
    .carousel-control-prev,
@@ -346,13 +346,19 @@
    margin: 0%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
    .cuartoBloqueColumnas {
       padding-left: 1rem;
       padding-bottom: 1rem;
       padding-right: 1rem;
    }
 
+   .cuartoBloqueLinea{
+      width: 35%;
+   }
+}
+
+@media screen and (max-width: 767px) {
    .cuartoBloqueLinea{
       width: 60%;
    }
