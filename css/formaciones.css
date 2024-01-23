@@ -1,367 +1,408 @@
 /* Primer Bloque */
-.primerBloque {
-   background-color: #f4f4f4; /* Color gris claro al 10% */
-   min-height: 600px;
-   align-items: center;
-   display: flex;
-   overflow-x: hidden;
-   padding-top: 2%;
-   padding-bottom: 2%;
-}
-
-.primerBloqueContenedor1 {
-   align-self: center;
-}
-
-.primerBloqueContenedor1 section {
-   padding: 2rem;
-}
-
-.primerBloqueContenedor1 p {
-   color: #606060; /* Color gris oscuro al 100% */
-}
-
-.btn-secondary { /* Edite la clase de Bootstrap */
-   background-color: #617eab; /* Color azul al 100% */
-   color: #f4f4f4; /* Color gris claro al 10% */
-   font-weight: 500;
-}
-
-.primerBloqueBoton {
-   margin-top: 2rem;
-}
-
-.btn-secondary:hover {
-   background-color: #606060; /* Color gris oscuro al 100% */
-   color: #f4f4f4; /* Color gris claro al 10% */
-   font-weight: 500;
-}
-
-.lineaPrimerBloque {
-   margin: auto;
-   color: #606060; /* Color gris oscuro al 100% */
-   opacity: 0.5;
-   width: 50%;
-   margin-left: 0%;
-}
-
-.tituloPrimerBloque {
-   color: #617eab; /* Color azul al 100% */
-   font-weight: 500;
-}
-
-.subTituloPrimerBloque {
-   color: #7f96ba; /* Color azul al 80% */
-   font-weight: 400;
-}
-
-.primerBloqueIconoInfo {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.svgContainer {
-   width: 104px;
-   height: 104px;
-   border: 2px solid #7f96ba; /* Color azul al 80% */
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: #e6e6e6; /* Color gris claro al 50% */
-   border-radius: 14.375rem;
-   position: absolute;
-   top: -80px; /* Ajusta este valor según sea necesario */
-   left: 50%;
-   transform: translateX(-50%);
-}
-
-.bi-info-circle {
-   display: block;
-}
-
-.primerBloqueIconoInfo svg {
-   color: #7f96ba; /* Color azul al 80% */
-}
-
-.primerBloqueContenedor2 {
-   padding-top: 5rem;
-   padding-bottom: 3rem;
-}
-
-.primerBloqueContenedor2 section {
-   background-color: #7f96ba; /* Color azul al 80% */
-   padding: 2rem;
-}
-
-.primerBloqueContenedor2 h4 {
-   color: #f4f4f4; /* Color gris claro al 10% */
-   font-weight: 500;
-}
-
-.lineaPrimerBloque2 {
-   margin: auto;
-   color: #f4f4f4; /* Color gris claro al 10% */
-   opacity: 0.5;
-   width: 46%;
-   margin-left: 0%;
-}
-
-.primerBloqueContenedor2 p {
-   color: #f4f4f4; /* Color gris claro al 10% */
-   font-weight: 400;
-}
-
-.primerBloqueDevolucion {
-   background-color: #f4f4f4; /* Color gris claro al 10% */
-   border-radius: 0.375rem;
-}
-
-.primerBloqueDevolucion p {
-   color: #606060; /* Color gris oscuro al 100% */
-   margin-left: 1rem;
-   margin-bottom: 0rem;
-}
-
-.primerBloqueDevolucion2 {
-   align-items: center;
-}
-
-.primerBloqueDevolucion2 svg {
-   color: #617eab;
-}
-
-/* Estilos para pantallas pequeñas (tablets y celulares) */
-@media (max-width: 767px) {
    .primerBloque {
+      background-color: #f4f4f4; /* Color gris claro al 10% */
+      min-height: 600px;
+      align-items: center;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      overflow-x: hidden;
+      padding-top: 2%;
+      padding-bottom: 2%;
    }
 
-   .primerBloqueContenedor1,
-   .primerBloqueContenedor2 {
-      width: 100%;
+   .primerBloqueContenedor1 {
+      align-self: center;
    }
 
-   .primerBloqueContenedor2 {
-      padding-top: 25%;
-      padding-bottom: 15%;
-      position: relative;
+   .primerBloqueContenedor1 section {
+      padding: 2rem;
    }
 
-   h1,
-   h3 {
-      text-align: center; /* Alineación al centro para pantallas de hasta 767px de ancho */
+   .primerBloqueContenedor1 p {
+      color: #606060; /* Color gris oscuro al 100% */
+   }
+
+   .tituloPrimerBloque {
+      font-weight: 600;
+   }
+
+   .subTituloPrimerBloque {
+      font-weight: 500;
+   }
+
+   .textoVerde{
+      color: #63a98f;
+   }
+
+   .textoVioleta{
+      color: #7062a4;
+   }
+
+   .textoRojo{
+      color: #9b6268;
+   }
+
+   .textoDorado{
+      color: #a09462;
    }
 
    .lineaPrimerBloque {
-      margin: 0 auto; /* Centra los elementos horizontalmente */
-      width: 70%;
+      margin: auto;
+      color: #606060; /* Color gris oscuro al 100% */
+      opacity: 0.5;
+      width: 50%;
+      margin-left: 0%;
    }
 
-   .primerBloqueContenedor1 section{
-      padding: 1rem;
+   .primerBloqueBoton {
+      margin-top: 2rem;
    }
 
-   .primerBloqueBoton{
-      justify-content: end;
+   .btn-secondary { /* Edite la clase de Bootstrap */
+      color: #f4f4f4; /* Color gris claro al 10% */
+      font-weight: 500;
+      border: none;
    }
-}
+
+   .btn-secondary:hover {
+      background-color: #ababab; /* Color gris oscuro al 50% */
+      color: #f4f4f4; /* Color gris claro al 10% */
+      font-weight: 500;
+   }
+
+   .fondoVerde{
+      background-color: #63a98f;
+   }
+
+   .fondoVioleta{
+      background-color: #7062a4;
+   }
+
+   .fondoRojo{
+      background-color: #9b6268;
+   }
+
+   .fondoDorado{
+      background-color: #a09462;
+   }
+
+   .primerBloqueContenedor2 {
+      padding-top: 5rem;
+      padding-bottom: 3rem;
+   }
+
+   .primerBloqueIconoInfo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .svgContainer {
+      width: 104px;
+      height: 104px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f4; /* Color gris claro al 10% */
+      border-radius: 14.375rem;
+      position: absolute;
+      top: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+
+   .svgContainerVerde{
+      border: 2px solid #63a98f;
+   }
+
+   .svgContainerVioleta{
+      border: 2px solid #7062a4;
+   }
+
+   .svgContainerRojo{
+      border: 2px solid #9b6268;
+   }
+
+   .svgContainerDorado{
+      border: 2px solid #a09462;
+   }
+
+   .bi-info-circle {
+      display: block;
+   }
+
+   .primerBloqueContenedor2 section {
+      padding: 2rem;
+   }
+
+   .primerBloqueContenedor2 h4 {
+      color: #f4f4f4; /* Color gris claro al 10% */
+      font-weight: 500;
+   }
+
+   .lineaPrimerBloque2 {
+      margin: auto;
+      color: #f4f4f4; /* Color gris claro al 10% */
+      opacity: 0.5;
+      width: 46%;
+      margin-left: 0%;
+   }
+
+   .primerBloqueContenedor2 p {
+      color: #f4f4f4; /* Color gris claro al 10% */
+      font-weight: 400;
+   }
+
+   .primerBloqueDevolucion {
+      background-color: #f4f4f4; /* Color gris claro al 10% */
+      border-radius: 0.375rem;
+   }
+
+   .primerBloqueDevolucion p {
+      color: #606060; /* Color gris oscuro al 100% */
+      margin-left: 1rem;
+      margin-bottom: 0rem;
+   }
+
+   .primerBloqueDevolucion2 {
+      align-items: center;
+   }
+
+   .primerBloqueDevolucion2 svg {
+      color: #617eab;
+   }
+
+   /* Media Query */
+   @media (max-width: 767px) {
+      .primerBloque {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+
+      .primerBloqueContenedor1,
+      .primerBloqueContenedor2 {
+         width: 100%;
+      }
+
+      .primerBloqueContenedor2 {
+         padding-top: 25%;
+         padding-bottom: 15%;
+         position: relative;
+      }
+
+      h1,
+      h3 {
+         text-align: center; /* Alineación al centro para pantallas de hasta 767px de ancho */
+      }
+
+      .lineaPrimerBloque {
+         margin: 0 auto; /* Centra los elementos horizontalmente */
+         width: 70%;
+      }
+
+      .primerBloqueContenedor1 section{
+         padding: 1rem;
+      }
+
+      .primerBloqueBoton{
+         justify-content: end;
+      }
+   }
 
 /* --------------------------------------------------------------------------------- */
 
 /* Segundo Bloque */
-.segundoBloque {
-   background-color: #e6e6e6; /* Color gris claro al 50% */
-   padding-bottom: 4rem;
-   padding-top: 3rem;
-}
-
-.segundoBloque h3 {
-   color: #617eab;
-   font-weight: 500;
-   text-align: center;
-}
-
-.segundoBloque hr {
-   margin: auto;
-   color: #606060; /* Color gris oscuro al 100% */
-   width: 30%;
-   margin-bottom: 3rem;
-}
-
-.videoSegundoBloque {
-   text-align: center;
-}
-
-@media (max-width: 991px) {
-   .videoSegundoBloque iframe { /* Centrar los iframes */
-      width: 100%;
-      height: 23vh;
+   .segundoBloque {
+      background-color: #e6e6e6; /* Color gris claro al 50% */
+      padding-bottom: 4rem;
+      padding-top: 3rem;
    }
 
-   .segundoBloque hr{
-      width: 60%;
+   .segundoBloque h3 {
+      font-weight: 500;
+      text-align: center;
    }
-}
+
+   .segundoBloque hr {
+      margin: auto;
+      color: #606060; /* Color gris oscuro al 100% */
+      width: 30%;
+      margin-bottom: 3rem;
+   }
+
+   .videoSegundoBloque {
+      text-align: center;
+   }
+
+   /* Media Query */
+   @media (max-width: 991px) {
+      .videoSegundoBloque iframe { /* Centrar los iframes */
+         width: 100%;
+         height: 23vh;
+      }
+
+      .segundoBloque hr{
+         width: 60%;
+      }
+   }
 
 /* --------------------------------------------------------------------------------- */
 
 /* Tercer Bloque */
-.tercerBloque {
-   background-color: #f4f4f4; /* Color gris claro al 10% */
-   padding-bottom: 3rem;
-}
-
-.tercerBloque h3 {
-   margin-top: 2rem;
-   color: #617eab; /* Color azul al 100% */
-   font-weight: 500;
-   text-align: center;
-}
-
-.tercerBloque hr {
-   margin: auto;
-   color: #606060; /* Color gris oscuro al 100% */
-   width: 30%;
-   margin-bottom: 2rem;
-}
-
-.tercerBloqueParrafoTestimonios {
-   text-align: left;
-   color: #606060; /* Color gris oscuro al 100% */
-}
-
-.tercerBloqueNombreTestimonio {
-   text-align: right;
-   color: #9c9c9c; /* Gris oscuro al 60% */
-}
-
-.tercerBloqueCentrarCarrouselles {
-   align-self: center;
-}
-
-/* Estilos generales para los botones del carousel de testimonios */
-.carousel-control-prev,
-.carousel-control-next {
-   display: block; /* Mostrar los botones por defecto */
-}
-
-@media screen and (max-width: 991px) {
-
-   /* Ocultar los botones en pantallas de hasta 767px de ancho */
-   .carousel-control-prev,
-   .carousel-control-next {
-      display: none;
+   .tercerBloque {
+      background-color: #f4f4f4; /* Color gris claro al 10% */
+      padding-bottom: 3rem;
    }
 
-   .tercerBloqueCentrarCarrouselles .col-12 iframe {
-      width: 100%; /* Ajustar el ancho del iframe para que se adapte al tamaño de la pantalla */
-      height: auto; /* Ajustar el alto para mantener la relación de aspecto original */
+   .tercerBloque h3 {
+      margin-top: 2rem;
+      color: #617eab; /* Color azul al 100% */
+      font-weight: 500;
+      text-align: center;
    }
 
-   .tercerBloqueCentrarCarrouselles .col { /* Alinear los carruseles uno debajo del otro */
-      margin-bottom: 20px;
+   .tercerBloque hr {
+      margin: auto;
+      color: #606060; /* Color gris oscuro al 100% */
+      width: 30%;
+      margin-bottom: 2rem;
    }
 
-   .carousel-inner {
-      max-width: 100%;
+   .tercerBloqueParrafoTestimonios {
+      text-align: left;
+      color: #606060; /* Color gris oscuro al 100% */
+   }
+
+   .tercerBloqueNombreTestimonio {
+      text-align: right;
+      color: #9c9c9c; /* Gris oscuro al 60% */
    }
 
    .tercerBloqueCentrarCarrouselles {
-      display: flex;
-      flex-direction: column;
+      align-self: center;
    }
-}
+
+   /* Estilos generales para los botones del carousel de testimonios */
+   .carousel-control-prev,
+   .carousel-control-next {
+      display: block; /* Mostrar los botones por defecto */
+   }
+
+   /* Media Query */
+   @media screen and (max-width: 991px) {
+
+      /* Ocultar los botones en pantallas de hasta 767px de ancho */
+      .carousel-control-prev,
+      .carousel-control-next {
+         display: none;
+      }
+
+      .tercerBloqueCentrarCarrouselles .col-12 iframe {
+         width: 100%; /* Ajustar el ancho del iframe para que se adapte al tamaño de la pantalla */
+         height: auto; /* Ajustar el alto para mantener la relación de aspecto original */
+      }
+
+      .tercerBloqueCentrarCarrouselles .col { /* Alinear los carruseles uno debajo del otro */
+         margin-bottom: 20px;
+      }
+
+      .carousel-inner {
+         max-width: 100%;
+      }
+
+      .tercerBloqueCentrarCarrouselles {
+         display: flex;
+         flex-direction: column;
+      }
+   }
 
 /* --------------------------------------------------------------------------------- */
 
 /* Cuarto Bloque */
-.cuartoBloque {
-   background-color: #f4f4f4; /* Color gris claro al 10% */
-}
+   .cuartoBloque {
+      background-color: #f4f4f4; /* Color gris claro al 10% */
+   }
 
-.cuartoBloque h3 {
-   margin-top: 2rem;
-   color: #617eab; /* Color azul al 100% */
-   font-weight: 500;
-   text-align: center;
-}
+   .cuartoBloque h3 {
+      margin-top: 2rem;
+      font-weight: 500;
+      text-align: center;
+   }
 
-.cuartoBloqueLinea {
-   margin: auto;
-   color: #606060; /* Color gris oscuro al 100% */
-   width: 20%;
-   margin-bottom: 2rem;
-}
+   .cuartoBloqueLinea {
+      margin: auto;
+      color: #606060; /* Color gris oscuro al 100% */
+      width: 20%;
+      margin-bottom: 2rem;
+   }
 
-.cuartoBloqueColumnas {
-   padding-left: 6rem;
-   padding-bottom: 2rem;
-   padding-right: 6rem;
-}
-
-/* Rectángulo con el título */
-.accordion-item {
-   border: none;
-   background-color: #f4f4f4; /* Color gris claro al 10% */
-}
-
-/* Rectángulo con el título al desplegarse */
-.accordion-header {
-   background-color: #f4f4f4; /* Color gris claro al 10% */
-}
-
-/* La caja de cada texto Acordión */
-.botonesPrimerBloque {
-   background-color: #f4f4f4; /* Color gris claro al 10% */
-   color: #617eab; /* Color azul al 100% */
-   box-shadow: none;
-   font-weight: 500;
-}
-
-/* Cuerpo del Acordión al desplegarse */
-.botonesDropPrimerBloque {
-   background-color: transparent;
-   color: #606060; /* Color gris oscuro al 100% */
-}
-
-/* Caja de cada título del acordión al no estar colapsada */
-.accordion-button:not(.collapsed) {
-   color: #606060; /* Color gris oscuro al 100% */
-   background-color: #bbc7d9; /* Color azul al 40% */
-   font-weight: 500;
-}
-
-/* Caja de cada título del acordión luego de haberla colapsado de nuevo */
-.accordion-button:focus {
-   box-shadow: none;
-}
-
-.acordionLinea {
-   color: #606060; /* Color gris oscuro al 100% */
-   opacity: 0.2;
-   width: 100%;
-   margin: 0%;
-}
-
-@media screen and (max-width: 991px) {
    .cuartoBloqueColumnas {
-      padding-left: 1rem;
-      padding-bottom: 1rem;
-      padding-right: 1rem;
+      padding-left: 6rem;
+      padding-bottom: 2rem;
+      padding-right: 6rem;
    }
 
-   .cuartoBloqueLinea{
-      width: 35%;
+   /* Título de cada pregunta */
+   .botonesPrimerBloque {
+      background-color: #f4f4f4; /* Color gris claro al 10% */
+      box-shadow: none;
+      font-weight: 500;
    }
-}
 
-@media screen and (max-width: 767px) {
-   .cuartoBloqueLinea{
-      width: 60%;
+   /* Texto de la respuesta */
+   .botonesDropPrimerBloque {
+      background-color: transparent;
+      color: #606060; /* Color gris oscuro al 100% */
    }
-}
+
+   /* Fondo de la respuesta */
+   .accordion-item {
+      border: none;
+      background-color: #f4f4f4; /* Color gris claro al 10% */
+   }
+
+   /* Rectángulo con el título al desplegarse */
+   .accordion-header {
+      background-color: #f4f4f4; /* Color gris claro al 10% */
+   }
+
+   /* Título de cada pregunta al no estar colapsado */
+   .accordion-button:not(.collapsed) {
+      color: #f4f4f4; /* Color gris claro al 10% */
+      background-color: #ababab; /* Color gris oscuro al 50% */
+      font-weight: 500;
+   }
+
+   /* Caja de cada pregunta luego de haberla colapsado de nuevo */
+   .accordion-button:focus {
+      box-shadow: none;
+   }
+
+   .acordionLinea {
+      color: #606060; /* Color gris oscuro al 100% */
+      opacity: 0.2;
+      width: 100%;
+      margin: 0%;
+   }
+
+   /* Media query */
+   @media screen and (max-width: 991px) {
+      .cuartoBloqueColumnas {
+         padding-left: 1rem;
+         padding-bottom: 1rem;
+         padding-right: 1rem;
+      }
+
+      .cuartoBloqueLinea{
+         width: 35%;
+      }
+   }
+
+   /* Media query */
+   @media screen and (max-width: 767px) {
+      .cuartoBloqueLinea{
+         width: 60%;
+      }
+   }
 
 /* --------------------------------------------------------------------------------- */
