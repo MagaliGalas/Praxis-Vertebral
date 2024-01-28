@@ -1,6 +1,5 @@
 /* Primer Bloque */
    .primerBloque {
-    background-color: #f4f4f4; /* Color gris claro al 10% */
     min-height: 400px;
     align-items: center;
     display: grid;
@@ -11,34 +10,9 @@
     text-align: center;
    }
 
-   .tituloPrimerBloque{
-    color: #617eab; /* Color azul al 100% */
-    font-weight: 500;
-   }
-
-   .subTituloPrimerBloque{
-    color: #7f96ba; /* Color azul al 80% */
-    font-weight: 400;
-   }
-
    /* La caja de cada texto Acordión */
    .accordion-item{
     border: none;
-    background-color: #f4f4f4; /* Color gris claro al 10% */
-   }
-
-   /* Caja del Acordeon */
-   .botonesPrimerBloque{
-    background-color: #f4f4f4; /* Color gris claro al 10% */
-    color: #617eab; /* Color azul al 100% */
-    box-shadow: none;
-    font-weight: 500;
-   }
-
-   /* Cuerpo del Acordión al desplegarse */
-   .botonesDropPrimerBloque{
-    background-color: transparent;
-    color: #606060; /* Color gris oscuro al 100% */
    }
 
    /* Caja de cada título del acordión al no estar colapsada */
@@ -55,7 +29,6 @@
 
    .acordionLinea{
     margin: auto;
-    color: #606060; /* Color gris oscuro al 100% */
     opacity: 0.2;
     width: 100%;
     margin-left: 0%;
@@ -69,18 +42,6 @@
    .botonAcordion a{
       text-decoration: none;
       color: inherit;
-   }
-
-    .btn-secondary { /* Edite la clase de Bootstrap */
-      background-color: #617eab; /* Color azul al 100% */
-      color: #f4f4f4; /* Color gris claro al 10% */
-      font-weight: 500;
-   }
-   
-   .btn-secondary:hover {
-      background-color: #606060; /* Color gris oscuro al 100% */
-      color: #f4f4f4; /* Color gris claro al 10% */
-      font-weight: 500;
    }
 
    /* Media query para pantallas de tablet y celular */
@@ -104,10 +65,6 @@
 /* --------------------------------------------------------------------------------- */
 
 /* Segundo Bloque */
-   .segundoBloque {
-    background-color: #e6e6e6; /* Color gris claro al 50% */
-   }
-
    .segundoBloqueContenedor1 {
     padding: 2rem;
     align-self: center;
@@ -119,25 +76,10 @@
     padding-bottom: 2rem;
    }
 
-   .tituloSegundoBloque{
-    color: #617eab; /* Color azul al 100% */
-    font-weight: 500;
-   }
-
-   .subTituloSegundoBloque{
-    color: #7f96ba; /* Color azul al 80% */
-    font-weight: 400;
-   }
-
-   .parrafoSegundoBloque{
-    font-weight: 400; 
-    color: #606060; /* Gris oscuro al 100 */
-   }
-
    .lineaDivisoriaSegundoBloque{
     color: #606060; /* Gris oscuro al 100% */
-    width: 70%;
-   }
+    max-width: 35vw;
+   }    
 
    /* Media query para pantallas de tablet y celular */
    @media screen and (max-width: 767px) {
@@ -168,18 +110,9 @@
 /* --------------------------------------------------------------------------------- */
 
 /* Tercer Bloque */
-   .tercerBloque {
-    background-color: #f4f4f4; /* Color gris claro al 10% */
-   }
-
-   .tituloTercerBloque{
-    color: #617eab; /* Color azul al 100% */
-   }
-
    .parrafoTestimonial{
     margin-bottom: 0.5rem;
     text-align: center;
-    color: #606060; /* Gris oscuro al 100% */
    }
 
    .lineaDivisoriaTestimonial{
@@ -190,12 +123,6 @@
    }
 
    .nombreTestimonio{
-    color: #9c9c9c; /* Gris oscuro al 60% */
-    text-align: right;
-   }
-
-   .localidadTestimonio{
-    color: #9c9c9c; /* Gris oscuro al 60% */
     text-align: right;
    }
 
@@ -235,42 +162,27 @@
 }
 
 /* Estilos para los colores específicos */
-.custom-popup h2 {
-   color: #617eab; /* Color azul al 100% */
-   font-weight: 600;
-   padding-bottom: 1rem;
-}
+   .custom-popup h2 {
+      font-weight: 600;
+      padding-bottom: 1rem;
+   }
 
-.custom-popup-subtitulo {
-   color: #606060; /* Gris oscuro al 100% */
-   font-weight: 400;
-   padding-bottom: 1rem;
-   line-height: 1.5;
-}
+   .custom-popup-subtitulo {
+      padding-bottom: 1rem;
+      line-height: 1.5;
+   }
 
-.custom-popup-texto {
-   color: #606060; /* Gris oscuro al 100% */
-   font-weight: 500;
-   padding-bottom: 1rem;
-   line-height: 1.5;
-}
+   .custom-popup-texto {
+      padding-bottom: 1rem;
+      line-height: 1.5;
+   }
 
-.custom-popup button {
-   background-color: #617eab; /* Color azul al 100% */
-   color: #f4f4f4; /* Color gris claro al 10% */
-   border: none;
-   padding: 10px 20px;
-   margin-top: 10px;
-   border-radius: 5px;
-   cursor: pointer;
-   width: 30%;
-}  
-
-.custom-popup button:hover {
-   background-color: #606060; /* Color gris oscuro al 100% */
-   color: #f4f4f4; /* Color gris claro al 10% */
-   font-weight: 500;
-}
+   .custom-popup button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 5px;
+      width: 30%;
+   }
 
    /* Media query para pantallas de tablet y celular */
    @media screen and (max-width: 767px) { 

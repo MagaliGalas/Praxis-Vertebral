@@ -21,35 +21,84 @@
   font-family: 'Cinzel', serif;
   }
 
-  /* Contenido Centrado General*/
-  .centrarContenido {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
+  /* Fondos */
+  .fondoAzul-100percent{
+    background-color: #617eab;
   }
+
+  .fondoAzul-80percent{
+    background-color: #7f96ba;
+  }
+
+  .fondoGris-50percent{
+    background-color: #e6e6e6;
+  }
+
+  .fondoGris-10percent{
+    background-color: #f4f4f4;
+  }
+
+  /* Títulos, Subtítulos, Textos */
+  .tituloAzul-100percent{
+    color: #617eab;
+    font-weight: 500;
+  }
+
+  .subtituloAzul-100percent{
+    color: #617eab;
+    font-weight: 400;
+  }
+
+  .tituloGris-100percent{
+    color: #606060;
+    font-weight: 500;
+  }
+
+  .subtituloGris-100percent{
+    color: #606060;
+    font-weight: 400;
+  }
+
+  .tituloGrisClaro-10percent{
+    color: #f4f4f4;
+    font-weight: 500;
+  }
+
+  .textoGris-100percent{
+    color: #606060;
+    font-weight: 400;
+  }
+
+  .textoGris-60percent{
+    color: #9c9c9c;
+    font-weight: 400;
+  }
+
+    /* Botones */
+  .botonAzul-100percent{
+    background-color: #617eab;
+    color: #f4f4f4; 
+    border: none;
+    cursor: pointer;
+  }
+
+  .hoverBotonAzul-100percent button:hover {
+    background-color: #606060;
+    color: #f4f4f4;
+ }
+
 
 /* --------------------------------------------------------------------------------- */
 
 /* Barra de Navegacion */
   .barraNavegacion {
-  background-color: #7f96ba; /* Color azul al 80% */
   padding-top: 0 !important; /* Edite la clase por defecto de Boostrap */
   padding-bottom: 0 !important; /* Edite la clase por defecto de Boostrap */
-  }
-
-  .barraNavegacionTexto {
-  color: #f4f4f4; /* Color gris claro al 10% */
-  font-weight: 500;
   }
 
   .nav-link:hover,
   .nav-link:focus { /* Color de letra del título al pasar el mouse */
   color: #f4f4f4; /* Color gris claro al 10% */
-  }
-
-  .barraNavegacionDropDown { /* Fondo de la lista desplegable */
-  background-color: #f4f4f4; /* Color gris claro al 10% */
   }
 
   .dropdown-item { /* Texto de cada lista desplegable */
@@ -96,17 +145,8 @@
 /* --------------------------------------------------------------------------------- */
 
 /* Footer */
-  .footer {
-  background-color: #7f96ba; /* Color azul al 80% */
-  }
-
-  .footerTextoyRRSS {
+  .footerTextoRRSS {
   align-self: center;
-  color: #f4f4f4; /* Color gris claro al 10% */
-  }
-
-  .footerRRSS {
-  color: #f4f4f4; /* Color gris claro al 10% */
   }
 
   .footerRRSS2{
