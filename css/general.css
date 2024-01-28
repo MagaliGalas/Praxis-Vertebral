@@ -30,11 +30,11 @@
     background-color: #7f96ba;
   }
 
-  .fondoGris-50percent{
+  .fondoGrisClaro-50percent{
     background-color: #e6e6e6;
   }
 
-  .fondoGris-10percent{
+  .fondoGrisClaro-10percent{
     background-color: #f4f4f4;
   }
 
@@ -71,6 +71,11 @@
 
   .textoGris-60percent{
     color: #9c9c9c;
+    font-weight: 400;
+  }
+
+  .textoGrisClaro-10percent{
+    color: #f4f4f4;
     font-weight: 400;
   }
 
