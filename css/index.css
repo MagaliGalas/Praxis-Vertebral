@@ -141,9 +141,20 @@
 
 /* --------------------------------------------------------------------------------- */
 
-/* Pop Up Masterclass */
+/* Modal Pop Up */
    .popUpMasterClass {
       background-image: url('../multimedia/index/Buda\ 5\ Modificado.png');
+      background-size: cover;
+      padding-top: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 2rem;
+      border-radius: 30px;
+      border: none;
+   }
+
+   .popUpCursos {
+      background-image: url('../multimedia/index/Buda\ 4\ Modificado.png');
       background-size: cover;
       padding-top: 1rem;
       padding-left: 2rem;
@@ -165,7 +176,7 @@
       padding-bottom: 0;
    }
 
-   .popUpMasterClass h2 {
+   .modal-header h2 {
       font-weight: 600;
    }
 
@@ -173,14 +184,14 @@
       padding: 0%;
    }
 
-   .popUpMasterClass h5 {
+   .modal-body h5 {
       line-height: 1.5;
       padding-top: 1rem;
       padding-bottom: 1.2rem;
       margin: 0;
    }
 
-   .popUpMasterClass h6 {
+   .modal-body h6 {
       line-height: 1.6;
       padding-bottom: 1.2rem;
       margin: 0;
@@ -192,7 +203,7 @@
       border: none;
    }
    
-   .popUpMasterClass .modal-footer button {
+   .modal-content .modal-footer button {
       padding-left: 1rem;
       padding-right: 1rem;
    }
@@ -200,6 +211,14 @@
    /* Media Query */
    @media screen and (max-width: 767px) { 
       .popUpMasterClass{
+         background-size: auto;
+         padding-left: 1rem;
+         padding-right: 1rem;
+         padding-top: 2rem;
+         padding-bottom: 1.5rem;
+      }
+
+      .popUpCursos{
          background-size: auto;
          padding-left: 1rem;
          padding-right: 1rem;
