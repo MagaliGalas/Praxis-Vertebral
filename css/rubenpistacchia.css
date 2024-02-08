@@ -1,71 +1,95 @@
 /* Primer Bloque */
-.primerBloque {
- background-color: #f4f4f4;
- padding-bottom: 2rem;
-}
-
-.primerBloque h3 {
- margin-top: 2rem;
- color: #617eab; /* Color azul al 100% */
- font-weight: 500;
- text-align: center;
-}
-
-.primerBloque hr {
- margin: auto;
- color: #606060; /* Color gris oscuro al 100% */
- width: 20%;
- margin-bottom: 2rem;
-}
-
-.primerBloque p {
- color: #606060; /* Color gris oscuro al 100% */
- padding-right: 2rem;
-}
-
-.primerBloqueColumna2 {
- background-color: #e6e6e6; /* Color gris claro al 50% */
-}
-
-.circle-image {
- border: 2px solid #c9c9c9; /* Gris Oscuro al 30% */
- border-radius: 50%;
- max-width: 400px;
- max-height: 400px;
- width: auto;
- height: auto;
-}
-
-.imagen{
- display: flex;
- justify-content: center; /* Alinea horizontalmente */
- align-items: center; /* Alinea verticalmente */
-}
-
- /* Ajuste para tablet y celular */
- @media screen and (max-width: 991px) {
-  .circle-image{
-   max-width: 350px;
-   max-height: 350px;
+  .primerBloque {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
   }
 
-  .primerBloque p{
-   margin-top: 3rem;
-   padding-right: 1rem;
-   padding-left: 1rem;
-   max-height: 600px; /* Ajusta esta altura máxima según tus preferencias */
-   overflow-y: auto; /* Agrega scroll vertical si el contenido excede la altura máxima */
+  .primerBloque h3 {
+    text-align: center;
   }
 
-  .primerBloque hr{
-    width: 40%;
+  .primerBloque hr {
+    margin: auto;
+    width: 20rem;
+    margin-bottom: 2rem;
   }
-}
 
-@media screen and (max-width: 767px){
-  .primerBloque hr{
-    width: 60%;
+  .primerBloqueParrafo {
+    max-height: 400px;
+    overflow-y: auto;
   }
-}
+
+  .circle-image {
+    border-radius: 50%;
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    box-shadow: 2px 5px 15px #9c9c9c;
+  }
+
+  .imagenCentrada {
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+  }
+
+  /* Media Query */
+  @media screen and (max-width: 991px) {
+    .circle-image {
+      max-width: 350px;
+      max-height: 350px;
+    }
+
+    .primerBloque p {
+      margin-top: 3rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      max-height: 600px;
+      overflow-y: auto;
+    }
+
+    .primerBloque hr {
+      width: 0;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .primerBloque hr {
+      width: 0;
+    }
+  }
+
+/* --------------------------------------------------------------------------------- */
+
+/* Modificación ScrollBar */
+  .primerBloqueParrafo::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  .primerBloqueParrafo::-webkit-scrollbar:vertical {
+    width: 6px;
+  }
+
+  .primerBloqueParrafo::-webkit-scrollbar-button:increment,
+  .primerBloqueParrafo::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  .primerBloqueParrafo::-webkit-scrollbar:horizontal {
+    height: 10px;
+  }
+
+  .primerBloqueParrafo::-webkit-scrollbar-thumb {
+    background-color: #c9c9c9;
+    border-radius: 20px;
+    border: none;
+  }
+
+  .primerBloqueParrafo::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
 
 /* --------------------------------------------------------------------------------- */
