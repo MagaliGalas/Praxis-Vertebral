@@ -10,20 +10,17 @@
     text-align: center;
    }
 
-   /* La caja de cada texto Acordión */
-   .accordion-item{
+   .accordion-item{ /* La caja de cada texto Acordión */
     border: none;
    }
-
-   /* Caja de cada título del acordión al no estar colapsada */
-   .accordion-button:not(.collapsed){
+   
+   .accordion-button:not(.collapsed){ /* Caja de cada título del acordión al no estar colapsada */
     color: #606060; /* Color gris oscuro al 100% */
     background-color: #e6e6e6; /* Color gris claro al 50% */
     font-weight: 500;
    }
 
-   /* Caja de cada título del acordión luego de haberla colapsado de nuevo */
-   .accordion-button:focus{
+   .accordion-button:focus{ /* Caja de cada título del acordión luego de haberla colapsado de nuevo */
     box-shadow: none;
    }
 
@@ -34,8 +31,7 @@
     margin-left: 0%;
    }
 
-   /* Botón + Info */
-   .botonAcordion{
+   .botonAcordion{ /* Botón + Info */
       border: none;
    }
 
@@ -44,7 +40,7 @@
       color: inherit;
    }
 
-   /* Media query para pantallas de tablet y celular */
+   /* Media Query */
    @media screen and (max-width: 991px) {
       .primerBloqueContenedor1 {
          margin-top: 2rem;
@@ -76,20 +72,19 @@
     padding-bottom: 2rem;
    }
 
-   .lineaDivisoriaSegundoBloque{
-    color: #606060; /* Gris oscuro al 100% */
-    max-width: 35vw;
+   .segundoBloqueContenedor2 hr{
+    width: 30rem;
    }    
 
-   /* Media query para pantallas de tablet y celular */
+   /* Media Query */
    @media screen and (max-width: 767px) {
       .segundoBloqueContenedor2 h1, h3 {
       text-align: center;
       }
 
       .segundoBloqueContenedor2 hr{
-         margin: 0 auto;
-         width: 50%;
+         margin: auto;
+         width: 0rem;
       }
 
       .segundoBloqueContenedor2{
@@ -99,7 +94,7 @@
 
    @media screen and (max-width: 991px) {
       .segundoBloqueContenedor2 hr{
-         width: 60%;
+         width: 0;
       }
 
       .segundoBloqueContenedor2 p{
@@ -110,89 +105,114 @@
 /* --------------------------------------------------------------------------------- */
 
 /* Tercer Bloque */
-   .parrafoTestimonial{
-    margin-bottom: 0.5rem;
-    text-align: center;
+   .parrafoTestimonial {
+      margin-top: 3rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
    }
 
-   .lineaDivisoriaTestimonial{
-    color: #606060; /* Gris oscuro al 100% */
-    width: 20%;
-    display: inline-block;
-    margin-bottom: 3rem;
+   .tercerBloque hr {
+      width: 20rem;
+      margin-bottom: 3rem;
+      margin: auto;
    }
 
-   .nombreTestimonio{
-    text-align: right;
+   .nombreTestimonio {
+      text-align: right;
    }
 
-   /* Estilos generales para los botones del carousel */
    .carousel-control-prev,
-   .carousel-control-next {
-   display: block; /* Mostrar los botones por defecto */
+   .carousel-control-next { /* Estilos generales para los botones del carousel */
+      display: block; /* Mostrar los botones por defecto */
    }
 
-   /* Ocultar los botones en pantallas de hasta 991px de ancho */
+   /* Media Query */
    @media screen and (max-width: 991px) {
+
       .carousel-control-prev,
       .carousel-control-next {
          display: none;
       }
 
-      .lineaDivisoriaTestimonial{
-         width: 50%;
-      }      
+      .tercerBloque hr {
+         width: 0;
+      }
    }
 
 /* --------------------------------------------------------------------------------- */
 
-.custom-popup {
-   position: fixed;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   background-image: url('../multimedia/index/Buda\ 5\ Modificado.png');
-   background-size: cover;
-   padding: 30px;
-   max-width: 600px;
-   width: 100%;
-   text-align: start;
-   border-radius: 30px;
-   border: none;
-}
+/* Pop Up Masterclass */
+   .popUpMasterClass {
+      background-image: url('../multimedia/index/Buda\ 5\ Modificado.png');
+      background-size: cover;
+      padding-top: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 2rem;
+      border-radius: 30px;
+      border: none;
+   }
 
-/* Estilos para los colores específicos */
-   .custom-popup h2 {
+   .modal-dialog{
+      max-width: 37.5rem;
+   }
+
+   .modal-header{
+      border: none;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+   }
+
+   .popUpMasterClass h2 {
       font-weight: 600;
-      padding-bottom: 1rem;
    }
 
-   .custom-popup-subtitulo {
-      padding-bottom: 1rem;
+   .modal-body{
+      padding: 0%;
+   }
+
+   .popUpMasterClass h5 {
       line-height: 1.5;
+      padding-top: 1rem;
+      padding-bottom: 1.2rem;
+      margin: 0;
    }
 
-   .custom-popup-texto {
-      padding-bottom: 1rem;
-      line-height: 1.5;
+   .popUpMasterClass h6 {
+      line-height: 1.6;
+      padding-bottom: 1.2rem;
+      margin: 0;
    }
 
-   .custom-popup button {
-      padding: 10px 20px;
-      margin-top: 10px;
-      border-radius: 5px;
-      width: 30%;
+   .modal-footer{
+      justify-content: flex-start;
+      padding: 0%;
+      border: none;
+   }
+   
+   .popUpMasterClass .modal-footer button {
+      padding-left: 1rem;
+      padding-right: 1rem;
    }
 
-   /* Media query para pantallas de tablet y celular */
+   /* Media Query */
    @media screen and (max-width: 767px) { 
-      .custom-popup button{
-         width: 50%;
+      .popUpMasterClass{
+         background-size: auto;
+         padding-left: 1rem;
+         padding-right: 1rem;
+         padding-top: 2rem;
+         padding-bottom: 1.5rem;
       }
 
-      .custom-popup{
-         max-width: 390px;
-         background-size: auto;
+      .modal-dialog{
+         max-width: 24.37rem;
+      }
+
+      .modal-footer{
+         justify-content: flex-end;
       }
    }
 
