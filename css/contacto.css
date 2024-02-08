@@ -1,144 +1,131 @@
-  .bloqueImpar {
-  padding: 2rem;
+/* Primer Bloque */
+  .primerBloque {
+    padding: 2rem;
   }
 
-  .bloquePar {
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-  padding-left: 0%;
-  padding-right: 0%;
-  width: 100%;
-  overflow: hidden;
+  .primerBloqueLinea {
+    margin: auto;
+    width: 12rem;
+    margin-left: 0%;
   }
 
-/* --------------------------------------------------------------------------------- */
-
-/* Contenedor 1 */
-  .primerBloqueContenedor1 section{
-  padding: 1rem;
+  .primerBloqueContenedor1 section {
+    padding: 1rem;
   }
 
-  .lineaPrimerBloque{
-  margin: auto;
-  color: #606060; /* Color gris oscuro al 100% */
-  width: 30%;
-  margin-left: 0%;
+  .primerBloqueContenedor1 p {
+    padding-bottom: 1rem;
   }
 
-  .primerBloqueContenedor1 p{
-  padding-bottom: 1rem;
+  .primerBloqueContenedor2 {
+    padding: 2rem;
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 60vw;
+    width: auto;
+  }
+
+  .primerBloqueContenedor2 h4 {
+    font-weight: 600;
+  }
+
+  .primerBloqueContenedor2 p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0%;
+    font-weight: 600;
+  }
+
+  .primerBloqueContenedor2SegundoTexto {
+    display: inline-block;
+    margin-left: 0.5vw;
+  }
+
+  .primerBloqueContenedor2SegundoTexto a {
+    text-decoration: none;
+  }
+
+  .primerBloqueContenedor2 svg {
+    margin-right: 1rem;
+  }
+
+  .lineaBloqueContenedor2 {
+    margin: auto;
+    width: 100%;
+    margin-left: 0%;
+    border-width: 1.6px;
+    font-weight: 0;
+  }
+
+  .divBloqueContenedor2 {
+    margin-bottom: 3vh;
+  }
+
+  /* Media Query */
+  @media (max-width: 991px) {
+    .primerBloqueContenedor2 {
+      margin-top: 65vh;
+      margin-right: 2vh;
+      max-width: 100%;
+      margin: 5vh auto 2rem auto; /* Margen vertical ajustado y margen horizontal centrado */
+      position: relative;
+    }
+
+    .botonFormulario {
+      justify-content: end;
+    }
+
+    .primerBloque {
+      padding: 1rem;
+    }
+
+    .primerBloqueLinea{
+      width: 0;
+    }
   }
 
 /* --------------------------------------------------------------------------------- */
 
 /* Formulario de Contacto */
   .formulario input {
-  background: none;
-  border: 0;
-  transition: all .3s;
-  border-bottom: 1px solid #e6e6e6; /* Gris claro al 50% */
-  border-radius: 0%;
+    background: none;
+    border: 0;
+    transition: all .3s;
+    border-bottom: 1px solid #e6e6e6; /* Gris claro al 50% */
+    border-radius: 0%;
   }
 
   .formulario input:focus {
-  background-color: #f4f4f4; /* Color gris claro al 10% */
-  border-color: #c9c9c9; /* Color Gris Oscuro al 30% */
-  box-shadow: none;
+    background-color: #f4f4f4; /* Color gris claro al 10% */
+    border-color: #c9c9c9; /* Color Gris Oscuro al 30% */
+    box-shadow: none;
   }
 
-  .formulario textarea{
-  background-color: #f4f4f4; /* Color gris claro al 10% */
-  border-color: #c9c9c9; /* Color Gris Oscuro al 30% */
+  .formulario textarea {
+    background-color: #f4f4f4; /* Color gris claro al 10% */
+    border-color: #c9c9c9; /* Color Gris Oscuro al 30% */
   }
 
-  .formulario textarea:focus{
-  box-shadow: none;
-  border-color: #c9c9c9; /* Color Gris Oscuro al 30% */
-  background-color: #ededed; /* Color gris claro al 30% */
+  .formulario textarea:focus {
+    box-shadow: none;
+    border-color: #c9c9c9; /* Color Gris Oscuro al 30% */
+    background-color: #ededed; /* Color gris claro al 30% */
   }
 
 /* --------------------------------------------------------------------------------- */
-
-/* Contenedor 2 */
-  .primerBloqueContenedor2{
-  /* background-color: #7f96ba; Color azul al 80% */
-  padding: 2rem;
-  position: absolute;
-  margin-top: 10vh;
-  margin-left: 60vw;
-  width: auto;
+  
+/* Segundo Bloque */
+  .segundoBloque {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    overflow: hidden;
   }
 
-  .primerBloqueContenedor2 h4{
-    font-weight: 600;
-}
-
-  .primerBloqueContenedor2 p{
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 0%;
-  font-weight: 600;
-  }
-
-  .primerBloqueContenedor2SegundoTexto{
-  display: inline-block;
-  margin-left: 0.5vw;
-  }
-
-  .primerBloqueContenedor2SegundoTexto a{
-  text-decoration: none;
-  }
-
-  .primerBloqueContenedor2 svg{
-  margin-right: 1rem;
-  }
-
-  .lineaBloqueContenedor2{
-  margin: auto;
-  width: 100%;
-  margin-left: 0%;
-  border-width: 1.6px;
-  font-weight: 0;
-  }
-
-  .divBloqueContenedor2{
-  margin-bottom: 3vh;
-  }
-
-  @media (max-width: 991px) {
-    .primerBloqueContenedor2 {
-      margin-top: 65vh;
-      margin-right: 2vh;
-      max-width: 100%; /* Asegura que el contenido no exceda el ancho de la pantalla */
-      margin: 5vh auto 2rem auto; /* Margen vertical ajustado y margen horizontal centrado */
-      position: relative;
-      }
-
-      .lineaPrimerBloque{
-        width: 25%;
-      }
-
-      .botonFormulario{
-        justify-content: end;
-      }
-
-      .bloqueImpar{
-        padding: 1rem;
-      }
-    }
-
-    @media (max-width: 767px){
-      .lineaPrimerBloque{
-        width: 50%;
-      }
-    }
-
-/* --------------------------------------------------------------------------------- */
-
-/* Contenedor 3 */
-  /* Segundo Bloque de Contenido */
-  .map-responsive iframe{
-  width:100%;
+  .segundoBloque iframe {
+    width: 100%;
   }
 
 /* --------------------------------------------------------------------------------- */
