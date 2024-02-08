@@ -1,11 +1,3 @@
-/* Colores */
-/* Azul 100%: #617eab (Títulos) */
-/* Azul 80%: #7f96ba (Subtítulos) */
-/* Gris Oscuro 100%: #606060 (Textos) */
-/* Gris Claro 10%: #f4f4f4 (Fondos) */
-/* Gris Claro 50%: #e6e6e6 (Fondos) */
-/* Gris Oscuro 50%: #ababab (Botones Hover) */
-
 /*Colores Formaciones*/
 /* Verde: #63a98f */
 /* Violeta: #9462a1 */
@@ -21,128 +13,145 @@
   font-family: 'Cinzel', serif;
   }
 
-  /* Fondos */
-  .fondoAzul-100percent{
+/* --------------------------------------------------------------------------------- */
+
+/* Fondos */
+  .fondoAzul-100percent {
     background-color: #617eab;
   }
 
-  .fondoAzul-80percent{
+  .fondoAzul-80percent {
     background-color: #7f96ba;
   }
 
-  .fondoGrisClaro-50percent{
+  .fondoGrisClaro-50percent {
     background-color: #e6e6e6;
   }
 
-  .fondoGrisClaro-10percent{
+  .fondoGrisClaro-10percent {
     background-color: #f4f4f4;
   }
 
-  /* Títulos, Subtítulos, Textos */
-  .tituloAzul-100percent{
+  .fondoGris-60percent {
+    background-color: #9c9c9c;
+  }
+
+/* --------------------------------------------------------------------------------- */
+
+/* Títulos, Subtítulos, Textos */
+  .tituloAzul-100percent {
     color: #617eab;
     font-weight: 500;
   }
 
-  .subtituloAzul-100percent{
+  .subtituloAzul-100percent {
     color: #617eab;
     font-weight: 400;
   }
 
-  .tituloGris-100percent{
+  .tituloGris-100percent {
     color: #606060;
     font-weight: 500;
   }
 
-  .subtituloGris-100percent{
+  .subtituloGris-100percent {
     color: #606060;
     font-weight: 400;
   }
 
-  .tituloGrisClaro-10percent{
+  .tituloGrisClaro-10percent {
     color: #f4f4f4;
     font-weight: 500;
   }
 
-  .textoGris-100percent{
+  .textoGris-100percent {
     color: #606060;
     font-weight: 400;
   }
 
-  .textoGris-60percent{
+  .textoGris-60percent {
     color: #9c9c9c;
     font-weight: 400;
   }
 
-  .textoGrisClaro-10percent{
+  .textoGrisClaro-10percent {
     color: #f4f4f4;
     font-weight: 400;
   }
 
-    /* Botones */
-  .botonAzul-100percent{
+/* --------------------------------------------------------------------------------- */
+
+/* Botones */
+  .botonAzul-100percent {
     background-color: #617eab;
-    color: #f4f4f4; 
+    color: #f4f4f4;
     border: none;
     cursor: pointer;
+    box-shadow: 1px 1px 10px -2px #9c9c9c;
+    transition: box-shadow 600ms, background-color 600ms;
   }
 
   .hoverBotonAzul-100percent button:hover {
     background-color: #606060;
     color: #f4f4f4;
- }
+    box-shadow: 1px 1px 15px -2px #9c9c9c;
+  }
 
+/* --------------------------------------------------------------------------------- */
+
+/* Línea Divisoria */
+  .lineaGris-100percent {
+    color: #606060;
+    opacity: 0.2;
+  }
 
 /* --------------------------------------------------------------------------------- */
 
 /* Barra de Navegacion */
-  .barraNavegacion {
-  padding-top: 0 !important; /* Edite la clase por defecto de Boostrap */
-  padding-bottom: 0 !important; /* Edite la clase por defecto de Boostrap */
+  .navBar { /* Edite las clases por defecto de Boostrap */
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 
   .nav-link:hover,
-  .nav-link:focus { /* Color de letra del título al pasar el mouse */
-  color: #f4f4f4; /* Color gris claro al 10% */
+  .nav-link:focus {
+    color: #f4f4f4;
   }
 
-  .dropdown-item { /* Texto de cada lista desplegable */
-  color: #7f96ba; /* Color azul al 80% */
-  font-weight: 500;
+  .dropdown-item {
+    color: #7f96ba;
+    font-weight: 500;
   }
 
   .dropdown-item:hover {
-  background-color: #7f96ba; /* Color azul al 80% */
-  color: #f4f4f4; /* Color gris claro al 10% */
+    background-color: #7f96ba;
+    color: #f4f4f4;
   }
 
   .dropdown:hover>.dropdown-menu { /* Accion para que al pasar el mouse se abra el menu */
-  display: block;
+    display: block;
   }
 
-  .dropdown>.dropdown-toggle:active { /* Accion para que al pasar el mouse se abra el menu */
-  pointer-events: none;
+  .dropdown>.dropdown-toggle:active {
+    pointer-events: none;
   }
 
-  /* Estilos para el logo en pantallas grandes (por defecto) */
-  #logo-image-large {
-    display: inline-block; /* Muestra el logo en línea */
+  #logo-image-large { /* Estilos para el logo en pantallas grandes (por defecto) */
+    display: inline-block;
   }
 
-  /* Estilos para el logo en pantallas pequeñas (tablet o celular) */
-  #logo-image-small {
-    display: none; /* Oculta el logo en pantallas pequeñas */
+  #logo-image-small { /* Estilos para el logo en pantallas pequeñas (tablet o celular) */
+    display: none;
   }
 
-  /* Media query para pantallas con un ancho máximo de 768px (tabletas y dispositivos móviles) */
+  /* Media Query */
   @media (max-width: 768px) {
-    /* Oculta el logo grande en pantallas pequeñas */
-    #logo-image-large {
+
+    #logo-image-large { /* Oculta el logo grande en pantallas pequeñas */
       display: none;
     }
 
-    /* Muestra el logo pequeño en pantallas pequeñas */
-    #logo-image-small {
+    #logo-image-small { /* Muestra el logo pequeño en pantallas pequeñas */
       display: inline-block;
     }
   }
@@ -150,48 +159,82 @@
 /* --------------------------------------------------------------------------------- */
 
 /* Footer */
-  .footerTextoRRSS {
-  align-self: center;
+  .footerRRSS1 {
+    align-self: center;
   }
 
-  .footerRRSS2{
-  justify-content: center;
+  .footerRRSS2 {
+    justify-content: center;
   }
 
-  .footerTexto{
-  margin-top: 4vh;
+  .footerTexto {
+    margin-top: 4vh;
   }
 
-  /* CSS para el contenedor del svg */
-  .svg-container {
-  display: inline-block;
+  .svg-container { /* CSS para el contenedor del svg */
+    display: inline-block;
   }
 
-  /* CSS para la animación de bounce-in */
-  @keyframes bounce-in {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
+  @keyframes bounce-in { /* CSS para la animación de bounce-in */
+
+    0%,
+    100% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
   }
 
-  /* CSS para aplicar la animación al contenedor del svg */
-  .hoverable:hover .svg-container {
-  animation: bounce-in 1s infinite;
+  .hoverable:hover .svg-container { /* CSS para aplicar la animación al contenedor del svg */
+    animation: bounce-in 1s infinite;
   }
 
-  /* CSS para agregar espacio entre los íconos */
-  .footerRRSS2 .hoverable {
-    margin-right: 10px; /* Ajusta el valor según el espacio deseado entre los íconos */
+  .footerRRSS2 .hoverable { /* CSS para agregar espacio entre los íconos */
+    margin-right: 10px;
   }
 
-  /* Media query para aplicar el espacio solo en pantallas de celular y tablet */
+  /* Media Query */
   @media (max-width: 767px) {
     .footerRRSS2 .hoverable {
-      margin-bottom: 10px; /* Agrega espacio entre filas si lo deseas */
-      margin-right: 3000; /* Elimina el espacio entre íconos en pantallas más pequeñas */
+      margin-bottom: 10px;
+      margin-right: 3000;
+    }
+  }
+
+/* --------------------------------------------------------------------------------- */
+
+/* Botón Youtube */
+  #youtube-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #FF0000;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #youtube-btn:hover {
+    background-color: #f4f4f4;
+  }
+
+  #youtube-btn svg {
+    fill: #f4f4f4;
+    transition: fill 0.3s ease;
+  }
+
+  #youtube-btn:hover svg {
+    fill: #ff0000;
+  }
+
+  /* Media Query */
+  @media (max-width: 767px) {
+    #youtube-btn {
+      bottom: 4rem;
     }
   }
 
