@@ -1,6 +1,5 @@
 /* Primer Bloque */
    .primerBloque {
-      background-color: #f4f4f4; /* Color gris claro al 10% */
       min-height: 600px;
       align-items: center;
       display: flex;
@@ -17,38 +16,16 @@
       padding: 2rem;
    }
 
-   .primerBloqueContenedor1 p {
-      color: #606060; /* Color gris oscuro al 100% */
-   }
-
-   .tituloPrimerBloque {
-      font-weight: 600;
-   }
-
-   .subTituloPrimerBloque {
+   .primerBloqueContenedor1 h1{
       font-weight: 500;
    }
 
-   .textoVerde{
-      color: #63a98f;
-   }
-
-   .textoVioleta{
-      color: #7062a4;
-   }
-
-   .textoRojo{
-      color: #9b6268;
-   }
-
-   .textoDorado{
-      color: #a09462;
+   .primerBloqueContenedor1 h3{
+      font-weight: 400;
    }
 
    .lineaPrimerBloque {
       margin: auto;
-      color: #606060; /* Color gris oscuro al 100% */
-      opacity: 0.5;
       width: 50%;
       margin-left: 0%;
    }
@@ -67,22 +44,6 @@
       background-color: #ababab; /* Color gris oscuro al 50% */
       color: #f4f4f4; /* Color gris claro al 10% */
       font-weight: 500;
-   }
-
-   .fondoVerde{
-      background-color: #63a98f;
-   }
-
-   .fondoVioleta{
-      background-color: #7062a4;
-   }
-
-   .fondoRojo{
-      background-color: #9b6268;
-   }
-
-   .fondoDorado{
-      background-color: #a09462;
    }
 
    .primerBloqueContenedor2 {
@@ -110,19 +71,23 @@
       transform: translateX(-50%);
    }
 
-   .svgContainerVerde{
-      border: 2px solid #63a98f;
-   }
-
-   .svgContainerVioleta{
+   .svgContainerVioleta{ /* MasterClass */
       border: 2px solid #7062a4;
    }
 
-   .svgContainerRojo{
-      border: 2px solid #9b6268;
+   .svgContainerVerde{ /* Curso Inicial */
+      border: 2px solid #63a98f;
    }
 
-   .svgContainerDorado{
+   .svgContainerAzul{ /* Primer Nivel */
+      border: 2px solid #617eac;
+   }
+
+   .svgContainerGris{ /* Segundo Nivel */
+      border: 2px solid #606060;
+   }
+
+   .svgContainerDorado{ /* Tercer Nivel */
       border: 2px solid #a09462;
    }
 
@@ -402,6 +367,82 @@
    @media screen and (max-width: 767px) {
       .cuartoBloqueLinea{
          width: 60%;
+      }
+   }
+
+/* --------------------------------------------------------------------------------- */
+
+/* Modal Pop Up */
+   .popUpCursoInicial {
+      background-image: url('../multimedia/cursos/Lineas\ Fondo\ Verde\ 1.png');
+      background-size: cover;
+      padding-top: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 2rem;
+      border-radius: 30px;
+      border: none;
+   }
+
+   .modal-dialog{
+      max-width: 37.5rem;
+   }
+
+   .modal-header{
+      border: none;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+   }
+
+   .modal-header h3 {
+      font-weight: 600;
+   }
+
+   .modal-body{
+      padding-left: 0%;
+      padding-right: 0%;
+      padding-bottom: 0%;
+      padding-top: 1rem;
+   }
+
+   .modal-footer{
+      justify-content: center;
+      padding: 0%;
+      border: none;
+   }
+
+   .modal-content .modal-footer button {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin-top: 1rem;
+   }
+
+/* Media Query */
+   @media screen and (max-width: 767px) { 
+      .popUpMasterClass{
+         background-size: auto;
+         padding-left: 1rem;
+         padding-right: 1rem;
+         padding-top: 2rem;
+         padding-bottom: 1.5rem;
+      }
+
+      .popUpCursos{
+         background-size: auto;
+         padding-left: 1rem;
+         padding-right: 1rem;
+         padding-top: 2rem;
+         padding-bottom: 1.5rem;
+      }
+
+      .modal-dialog{
+         max-width: 24.37rem;
+      }
+
+      .modal-footer{
+         justify-content: flex-end;
       }
    }
 

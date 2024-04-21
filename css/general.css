@@ -32,51 +32,50 @@
     background-color: #f4f4f4;
   }
 
+  .fondoGris-100percent {
+    background-color: #606060;
+  }
+
   .fondoGris-60percent {
     background-color: #9c9c9c;
   }
 
+ .fondoVioleta-100percent { /* MasterClass */
+   background-color: #7062a4;
+ }
+
+ .fondoVerde-100percent { /* Curso Inicial */
+   background-color: #63a98f;
+ }
+
+ .fondoDorado-100percent {
+   background-color: #a09462;
+ }
 /* --------------------------------------------------------------------------------- */
 
-/* Títulos, Subtítulos, Textos */
-  .tituloAzul-100percent {
+/* Textos */
+  .textoAzul-100percent {
     color: #617eab;
-    font-weight: 500;
-  }
-
-  .subtituloAzul-100percent {
-    color: #617eab;
-    font-weight: 400;
-  }
-
-  .tituloGris-100percent {
-    color: #606060;
-    font-weight: 500;
-  }
-
-  .subtituloGris-100percent {
-    color: #606060;
-    font-weight: 400;
-  }
-
-  .tituloGrisClaro-10percent {
-    color: #f4f4f4;
-    font-weight: 500;
   }
 
   .textoGris-100percent {
     color: #606060;
-    font-weight: 400;
-  }
-
-  .textoGris-60percent {
-    color: #9c9c9c;
-    font-weight: 400;
   }
 
   .textoGrisClaro-10percent {
     color: #f4f4f4;
-    font-weight: 400;
+  }
+
+  .textoVioleta-100percent {
+    color: #7162a5;
+  }
+
+  .textoVerde-100percent {
+    color: #63a98f;
+  }
+
+  .textoDorado-100percent {
+    color: #a09462;
   }
 
 /* --------------------------------------------------------------------------------- */
@@ -92,7 +91,37 @@
   }
 
   .hoverBotonAzul-100percent button:hover {
-    background-color: #606060;
+    background-color: #ababab; /* Color gris oscuro al 50% */
+    color: #f4f4f4;
+    box-shadow: 1px 1px 15px -2px #9c9c9c;
+  }
+
+  .botonVioleta-100percent {
+    background-color: #7162a5;
+    color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px -2px #9c9c9c;
+    transition: box-shadow 600ms, background-color 600ms;
+  }
+
+  .hoverBotonVioleta-100percent button:hover {
+    background-color: #ababab; /* Color gris oscuro al 50% */
+    color: #f4f4f4;
+    box-shadow: 1px 1px 15px -2px #9c9c9c;
+  }
+
+  .botonVerde-100percent {
+    background-color: #63a98f;
+    color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px -2px #9c9c9c;
+    transition: box-shadow 600ms, background-color 600ms;
+  }
+
+  .hoverBotonVerde-100percent button:hover {
+    background-color: #ababab; /* Color gris oscuro al 50% */
     color: #f4f4f4;
     box-shadow: 1px 1px 15px -2px #9c9c9c;
   }

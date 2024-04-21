@@ -10,6 +10,18 @@
     text-align: center;
    }
 
+   .primerBloqueContenedor1 h1{
+      font-weight: 500;
+   }
+
+   .primerBloqueContenedor1 h4{
+      font-weight: 400;
+   }
+
+   .primerBloqueContenedor1 h3{
+      font-weight: 400;
+   }
+
    .accordion-item{ /* La caja de cada texto Acordión */
     border: none;
    }
@@ -143,7 +155,7 @@
 
 /* Modal Pop Up */
    .popUpMasterClass {
-      background-image: url('../multimedia/index/Buda\ 5\ Modificado.png');
+      background-image: url('../multimedia/index/Ruben\ 4\ -\ Fondo\ Degradado\ Violeta\ \(Version\ 3\).jpg');
       background-size: cover;
       padding-top: 1rem;
       padding-left: 2rem;

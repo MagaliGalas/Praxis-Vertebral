@@ -1,73 +1,54 @@
-  .contenidoComun h3 {
-    color: #617eab; /* Color azul al 100% */
-    font-weight: 500;
-    text-align: center;
+  .contenidoComun {
+    padding: 2rem;
   }
 
-  .hr1 {
-    margin: auto;
-    color: #606060; /* Color gris oscuro al 100% */
-    width: 20%;
-    margin-bottom: 5rem;
-  }
-
-  .titulosh5 {
-    color: #617eab; /* Color azul al 100% */
-    text-decoration: solid;
-    text-decoration-color: #617eab;
+  .centrarTexto {
     text-align: center;
   }
 
   .contenidoComun p {
-    color: #606060; /* Gris oscuro al 100% */
     padding-top: 2rem;
   }
 
-  .bloqueImpar {
-    background-color: #f4f4f4; /* Color gris claro al 10% */
-    padding: 2rem;
+  .ratio{
+    width: 41.66666667%;
   }
 
-  .bloquePar {
-    background-color: #e6e6e6; /* Color gris claro al 50% */
-    padding: 2rem;
-  }
-
-  .hr2 {
-    margin: auto;
-    color: #606060; /* Color gris oscuro al 100% */
-    width: 40%;
-    margin-bottom: 5rem;
-  }
-
-  .titulosh52 {
-    color: #7f96ba; /* Color azul al 80% */
+  .subtituloVideos {
     font-weight: 400;
-    text-align: center;
   }
 
   .bloquesVideosTexto {
     align-self: center;
   }
 
+  .hr1 {
+    margin: auto;
+    width: 20%;
+    margin-bottom: 5rem;
+  }
+
+  .hr2 {
+    margin: auto;
+    width: 40%;
+    margin-bottom: 5rem;
+  }
+
   .hr3 {
-    color: #606060; /* Color gris oscuro al 100% */
     width: 40%;
     margin: auto;
   }
 
   /* --------------------------------------------------------------------------------- */
 
-  /* Carrousel */
+/* Carrousel */
   .carousel-container {
     position: relative;
   }
 
   .carousel-caption-item {
     display: none;
-    text-align: center;
     padding-top: 1rem;
-    color: #606060;
   }
 
   .carousel-caption-item.active {
@@ -76,23 +57,8 @@
 
 /* --------------------------------------------------------------------------------- */
 
-  /* Estilos para pantallas grandes (lg) y superiores */
+/* Media Query */
   @media (max-width: 991px) {
-
-    /* Cambiar el orden para el segundo bloque */
-    .bloquePar .col-lg-5 {
-      order: 2;
-    }
-
-    .bloquePar .bloquesVideosTexto {
-      order: 1;
-    }
-
-    .contenidoComun iframe { /* Centrar los iframes */
-      width: 100%;
-      height: 23vh;
-    }
-
     .bloquesVideosTexto {
       padding-bottom: 2rem;
     }
@@ -107,6 +73,10 @@
 
     .hr3{
       width: 65%;
+    }
+
+    .ratio{
+      width: 100%;
     }
   }
 
