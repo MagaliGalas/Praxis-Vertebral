@@ -70,12 +70,20 @@
     color: #7162a5;
   }
 
+  .textoVioleta2-100percent {
+    color: #6E51D9;
+  }
+
   .textoVerde-100percent {
     color: #63a98f;
   }
 
   .textoDorado-100percent {
     color: #a09462;
+  }
+
+  .textoNegro-100percent {
+    color: #141414;
   }
 
 /* --------------------------------------------------------------------------------- */
@@ -106,6 +114,21 @@
   }
 
   .hoverBotonVioleta-100percent button:hover {
+    background-color: #ababab; /* Color gris oscuro al 50% */
+    color: #f4f4f4;
+    box-shadow: 1px 1px 15px -2px #9c9c9c;
+  }
+
+  .botonVioleta2-100percent {
+    background-color: #7162a5;
+    color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px -2px #9c9c9c;
+    transition: box-shadow 600ms, background-color 600ms;
+  }
+
+  .hoverBotonVioleta2-100percent button:hover {
     background-color: #ababab; /* Color gris oscuro al 50% */
     color: #f4f4f4;
     box-shadow: 1px 1px 15px -2px #9c9c9c;
