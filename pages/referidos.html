@@ -61,6 +61,8 @@
   gtag('config', 'G-NLWDQTTJGL');
 </script>
 
+<script src="../js/js/referidos.js"></script>
+
 <body>
 
   <!-- Google Tag Manager (noscript) -->
@@ -151,49 +153,36 @@
   </nav>
 
   <!-- Primer Bloque de Contenido -->
-  <!-- <div class="container-fluid primerBloque fondoGrisClaro-10percent">
-    <div class="row">
-
-      <section>
-        <h3 class="textoAzul-100percent">Dr. Rubén A. Pistacchia</h3>
-        <hr class="lineaGris-100percent">
-      </section>
-
-      <div class="col-lg-6 col-md-12 col-sm-12 imagenCentrada">
-          <img src="../multimedia/ruben/DSC05324_Ruben_720x720.jpg" alt="Ruben" class="circle-image">
-      </div>
-
-      <div class="col-lg-6 col-md-12 col-sm-12 primerBloqueParrafo">
-        <p class="textoGris-100percent animar-tipeo">
-          ¡Hola! Soy Rubén Pistacchia, y soy un apasionado por la salud humana.
-          <br>
-          <br>
-          Me recibí como Licenciado en Kinesiología en la Universidad Nacional de Buenos Aires, y no conforme con eso, seguí buscando.
-          <br>
-          <br>
-          Cuando estuve preparado, apareció "mi maestro", el Dr. Mario Carlos Fiore (discípulo del monje tibetano Sarumaah), de quien fuí su primer discípulo.
-          <br>
-          <br>
-          Con él me inicié en la medicina tibetana, con una metodología terapéutica totalmente innovadora. y con una concepción diferente, 
-          que incluyen aspectos emocionales al tratamiento.
-          <br>
-          <br>
-          Así comencé mi investigación sobre este concepto, y luego de cursar el postgrado, obtuve el título de Doctor en kinesiología, 
-          en la Universidad Nacional de San Martín, con mi tesis sobre la influencia de la columna vertebral en síntomas de rodillas. 
-          Demostrando científicamente, que se podían reducir las dolencias de la artrosis, sólo tratando la columna
-          <br>
-          <br>
-          Posteriormente, y siguiendo la forma de mi maestro, comencé a fusionar mis conocimientos científicos, con lo recibido de él, 
-          creando un método práctico, didáctico y fácil de poner en práctica, para otros apasionados como yo: la Praxis Vertebral Tibetana ®.
-          <br>
-          <br>
-          Por eso, hoy, sólo me defino como praxista, y tengo colegas de diversos niveles de formación, pero con un gran corazón, que entregan a través de sus manos, 
-          al aliviar el dolor.
-        </p>
-      </div>
-
+  <div class="container">
+    <h1 class="justify-content-md-center text-center m-2">Listado de Praxistas</h1>
+    <div class="row justify-content-md-center">
+        <div class="col-6">
+            <div class="form-floating">
+                <select id="filter-country" class="form-select">
+                    <option value="">Todos</option>
+                    <!-- Opciones adicionales se agregarán dinámicamente -->
+                </select>
+                <label for="filter-country">País</label>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-floating">
+                <select id="filter-city" class="form-select">
+                    <option value="">Todas</option>
+                    <!-- Opciones adicionales se agregarán dinámicamente -->
+                </select>
+                <label for="filter-city">Ciudad</label>
+            </div>
+        </div>
     </div>
-  </div> -->
+    <div class="row">
+        <div class="col p-6">
+            <table id="praxistas-table" class="table table-responsive align-middle table-hover">
+                <!-- Tabla generada por DataTable -->
+            </table>
+        </div>
+    </div>
+</div>
 
   <!-- Footer -->
   <footer class="fondoAzul-80percent">
@@ -284,26 +273,6 @@
       <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
     </svg>
   </a>
-
-  <!-- Tipeo de Texto automático -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var textoTipeo = document.querySelector(".animar-tipeo");
-      var textoCompleto = textoTipeo.innerHTML;
-      textoTipeo.innerHTML = "";
-  
-      function tipear() {
-        var textoParcial = textoCompleto.slice(0, textoTipeo.innerHTML.length + 1);
-        textoTipeo.innerHTML = textoParcial;
-  
-        if (textoParcial !== textoCompleto) {
-          setTimeout(tipear, 20); // Ajusta el tiempo de espera entre letras según tus preferencias
-        }
-      }
-  
-      tipear();
-    });
-  </script>
   
 </body>
 

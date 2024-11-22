@@ -63,6 +63,44 @@
   }
 
 /* --------------------------------------------------------------------------------- */
+  
+/* Tabla */
+
+#praxistas-table{
+  margin-top: 1em;
+}
+
+th {
+  background-color: #7f96ba !important;
+  color: #fff !important;
+}
+
+.table tbody tr{
+  --bs-table-bg: #f4f4f4;
+}
+
+.dt-search{
+  display:none;
+}
+
+td a{
+  text-decoration: none;  
+}
+td .bi{
+  color:black;
+  font-size:25px;
+}
+td .bi.bi-instagram{
+  color:#E1306C;
+}
+td .bi.bi-facebook{
+  color:#4267B2;
+}
+td .bi.bi-whatsapp{
+  color:#25D366;
+}
+
+/* --------------------------------------------------------------------------------- */
 
 /* Modificación ScrollBar */
   .primerBloqueParrafo::-webkit-scrollbar {
