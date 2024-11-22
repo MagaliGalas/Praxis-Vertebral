@@ -1,133 +1,79 @@
 /* Primer Bloque */
-.primerBloque {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-    padding-right: 5rem;
-    padding-left: 5rem;
+  .container h1{
+    font-weight: 500;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 
-  .primerBloque h3 {
-    text-align: center;
+  .container td{
+    color: #606060;
   }
 
-  .primerBloque hr {
-    margin: auto;
-    width: 20rem;
-    margin-bottom: 2rem;
+  .container option{
+    color: #606060;
   }
 
-  .primerBloqueParrafo {
-    max-height: 400px;
-    overflow-y: auto;
+  .container select{
+    color: #606060;
   }
 
-  .circle-image {
-    border-radius: 50%;
-    max-width: 400px;
-    max-height: 400px;
-    width: auto;
-    height: auto;
-    box-shadow: 2px 5px 15px #9c9c9c;
-  }
-
-  .imagenCentrada {
-    display: flex;
-    justify-content: center; /* Alinea horizontalmente */
-    align-items: center; /* Alinea verticalmente */
-  }
-
-  /* Media Query */
-  @media screen and (max-width: 991px) {
-    .circle-image {
-      max-width: 350px;
-      max-height: 350px;
+/* Estilo personalizado para el borde de enfoque */
+  .form-select:focus {
+    outline: none;
+    border: none; /* Cambia el color y grosor del borde */
+    box-shadow: 0 0 8px rgba(97, 126, 172, 0.5); /* Borde difuminado */
     }
-
-    .primerBloque p {
-      margin-top: 3rem;
-      padding-right: 1rem;
-      padding-left: 1rem;
-      max-height: 600px;
-      overflow-y: auto;
-    }
-
-    .primerBloque hr {
-      width: 0;
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    .primerBloque hr {
-      width: 0;
-    }
-  }
 
 /* --------------------------------------------------------------------------------- */
   
 /* Tabla */
+  #praxistas-table{
+    margin-top: 2em;
+    margin-bottom: 3em;
+  }
 
-#praxistas-table{
-  margin-top: 1em;
-}
+  th {
+    background-color: #7f96ba !important;
+    color: #f4f4f4 !important;
+  }
 
-th {
-  background-color: #7f96ba !important;
-  color: #fff !important;
-}
+  .table tbody tr{
+    --bs-table-bg: #f4f4f4;
+  }
 
-.table tbody tr{
-  --bs-table-bg: #f4f4f4;
-}
+  .dt-search{
+    display:none;
+  }
 
-.dt-search{
-  display:none;
-}
-
-td a{
-  text-decoration: none;  
-}
-td .bi{
-  color:black;
-  font-size:25px;
-}
-td .bi.bi-instagram{
-  color:#E1306C;
-}
-td .bi.bi-facebook{
-  color:#4267B2;
-}
-td .bi.bi-whatsapp{
-  color:#25D366;
-}
+  td a{
+    text-decoration: none;  
+  }
+  td .bi{
+    color: #606060;
+    font-size:25px;
+  }
+  td .bi.bi-instagram{
+    color:#E1306C;
+  }
+  td .bi.bi-facebook{
+    color:#4267B2;
+  }
+  td .bi.bi-whatsapp{
+    color:#25D366;
+  }
 
 /* --------------------------------------------------------------------------------- */
 
-/* Modificación ScrollBar */
-  .primerBloqueParrafo::-webkit-scrollbar {
-    -webkit-appearance: none;
+/* Mantener Footer Abajo */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
   }
 
-  .primerBloqueParrafo::-webkit-scrollbar:vertical {
-    width: 6px;
-  }
-
-  .primerBloqueParrafo::-webkit-scrollbar-button:increment,
-  .primerBloqueParrafo::-webkit-scrollbar-button {
-    display: none;
-  }
-
-  .primerBloqueParrafo::-webkit-scrollbar:horizontal {
-    height: 10px;
-  }
-
-  .primerBloqueParrafo::-webkit-scrollbar-thumb {
-    background-color: #c9c9c9;
-    border-radius: 20px;
-    border: none;
-  }
-
-  .primerBloqueParrafo::-webkit-scrollbar-track {
-    border-radius: 10px;
+  main {
+    flex: 1; /* Ocupa el espacio restante entre el header y el footer */
   }
 
 /* --------------------------------------------------------------------------------- */

@@ -152,37 +152,39 @@
     </div>
   </nav>
 
+  <main>
   <!-- Primer Bloque de Contenido -->
-  <div class="container">
-    <h1 class="justify-content-md-center text-center m-2">Listado de Praxistas</h1>
-    <div class="row justify-content-md-center">
-        <div class="col-6">
-            <div class="form-floating">
-                <select id="filter-country" class="form-select">
-                    <option value="">Todos</option>
-                    <!-- Opciones adicionales se agregarán dinámicamente -->
-                </select>
-                <label for="filter-country">País</label>
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="form-floating">
-                <select id="filter-city" class="form-select">
-                    <option value="">Todas</option>
-                    <!-- Opciones adicionales se agregarán dinámicamente -->
-                </select>
-                <label for="filter-city">Ciudad</label>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col p-6">
-            <table id="praxistas-table" class="table table-responsive align-middle table-hover">
-                <!-- Tabla generada por DataTable -->
-            </table>
-        </div>
-    </div>
-</div>
+    <div class="container">
+      <h1 class="justify-content-md-center text-center m-2 textoAzul-100percent">Praxistas Referidos</h1>
+      <div class="row justify-content-md-center">
+          <div class="col-6">
+              <div class="form-floating">
+                  <select id="filter-country" class="form-select">
+                      <option value="">Todos</option>
+                      <!-- Opciones adicionales se agregarán dinámicamente -->
+                  </select>
+                  <label for="filter-country">País</label>
+              </div>
+          </div>
+          <div class="col-6">
+              <div class="form-floating">
+                  <select id="filter-city" class="form-select">
+                      <option value="">Todas</option>
+                      <!-- Opciones adicionales se agregarán dinámicamente -->
+                  </select>
+                  <label for="filter-city">Ciudad</label>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col p-6">
+              <table id="praxistas-table" class="table table-responsive align-middle table-hover">
+                  <!-- Tabla generada por DataTable -->
+              </table>
+          </div>
+      </div>
+  </div>
+</main>
 
   <!-- Footer -->
   <footer class="fondoAzul-80percent">
