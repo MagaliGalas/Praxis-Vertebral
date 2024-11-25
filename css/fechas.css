@@ -1,0 +1,249 @@
+/* Primer Bloque */
+  .primerBloque {
+    padding: 2rem;
+  }
+
+  .primerBloque h3 {
+    text-align: center;
+  }
+
+  .primerBloque hr {
+    margin: auto;
+    width: 10%;
+    margin-bottom: 2rem;
+  }
+
+/* Calendario */
+  .main-container {
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente el calendario y el menú */
+    align-items: center; /* Alinea verticalmente ambos elementos */
+    /* gap: 3rem; Espacio entre el calendario y el menú */
+    /* padding: 2rem; */
+    min-height: 400px; /* Asegura un mínimo de altura para evitar colapsos */
+    position: relative; /* Define contexto para el centrado */
+    margin: 0;
+    padding: 0;
+    }
+
+  .calendar-container {
+    flex: 1; /* El calendario ocupa más espacio proporcional */
+    margin: 0;
+    padding: 0;
+    max-width: 500px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    }
+
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    background: #7f96ba;
+    color: #f4f4f4;
+  }
+
+/* Botones Año Previo y Siguiente */
+  /* .calendar-header .prev-year,
+  .calendar-header .next-year {
+    background: #fff;
+    color: #335c81;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  .calendar-header .prev-year:hover,
+  .calendar-header .next-year:hover {
+    background: #ddd;
+  } */
+
+/* Días del calendario */
+  .calendar-weekdays,
+  .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+  }
+
+/* Nav con los días */
+  .calendar-weekdays div {
+    /* font-weight: bold; */
+    background: #9c9c9c;
+    padding: 0.5rem 0;
+    color: #f4f4f4;
+  }
+
+  /* Bordes de los cuadros con los días */
+  .calendar-days .day {
+    padding: 0.5rem;
+    border: 1px solid #e6e6e6;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  /* .calendar-days .day:hover {
+    background: #ebf4f9;
+  } */
+
+  .calendar-days .selected {
+    background: #617eac;
+    color: #f4f4f4;
+  }
+
+  /* .calendar-days .prev-month {
+    color: #bbb;
+  } */
+
+  /* .events-container {
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  } */
+
+  /* .events-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  } */
+
+  /* .events-header h2 {
+    margin: 0;
+  } */
+
+/* .events-list li {
+  margin-bottom: 0.5rem;
+  color: #555;
+} */
+
+/* .events-list li small {
+  display: block;
+  color: #888;
+} */
+
+/* Listado de Eventos */
+  .events-contenedor{
+    align-content: center;
+  }
+
+  .events-menu {
+    flex: 3; /* Menú lateral ocupa menos espacio proporcional */
+    display: flex;
+    flex-direction: column; /* Contenido en columna */
+    justify-content: center; /* Centra verticalmente todo el contenido del aside */
+    /* align-items: center; Centra horizontalmente el contenido */
+    background: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-height: 300px; /* Asegura consistencia del diseño */
+  }
+
+  .events-menu h2 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    color: #617eac;
+    text-align: center;
+  }
+
+  .events-list {
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Elimina los puntos al lado de los <li> */
+  }
+
+  .events-list li {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: #f4f4f4;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  /* .events-list li:hover {
+    background: #ebf4f9;
+  } */
+
+  .events-list strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #617eac;
+  }
+
+  .events-list small {
+    font-size: 0.9rem;
+    color: #9c9c9c;
+  }
+
+/* Botón dentro de cada <li> */
+  /* .more-info-btn { */
+    /* display: inline-block; */
+    /* margin-top: 0.5rem; Separación del texto superior */
+    /* padding: 0.5rem 1rem; */
+    /* background-color: #7f96ba; Color del botón */
+    /* color: #fff; Color del texto */
+    /* text-decoration: none; Sin subrayado */
+    /* font-size: 0.9rem; */
+    /* border-radius: 5px; */
+    /* transition: background 0.3s; */
+  /* } */
+
+  /* .more-info-btn:hover {
+    background-color: #617eac; /* Color en hover 
+  } */
+
+  .events-list li {
+    display: flex; /* Habilita flexbox */
+    justify-content: space-between; /* Espaciado entre texto y botón */
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: #f4f4f4;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    /* transition: background 0.3s; */
+  }
+  
+  .event-details {
+    display: flex;
+    flex-direction: column; /* Apila el texto en columna */
+  }
+  
+  .event-details strong {
+    font-size: 1.1rem;
+    color: #617eac;
+  }
+  
+  .event-details small {
+    font-size: 0.9rem;
+    color: #9c9c9c;
+  }
+
+  .animate__pulse {
+    animation: pulse 1.5s infinite;
+  }
+
+/* Responsivo */
+  @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+    }
+
+    .calendar-container,
+    .events-menu {
+      flex: 1;
+      width: 100%;
+    }
+  }
