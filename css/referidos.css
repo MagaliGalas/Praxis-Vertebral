@@ -17,6 +17,12 @@
     color: #606060;
   }
 
+  .centrarTexto {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 5%;
+  }
+
 /* Estilo personalizado para el borde de enfoque */
   .form-select:focus {
     outline: none;
@@ -48,16 +54,20 @@
   td a{
     text-decoration: none;  
   }
+
   td .bi{
     color: #606060;
     font-size:25px;
   }
+
   td .bi.bi-instagram{
     color:#E1306C;
   }
+
   td .bi.bi-facebook{
     color:#4267B2;
   }
+
   td .bi.bi-whatsapp{
     color:#25D366;
   }
@@ -77,3 +87,12 @@
   }
 
 /* --------------------------------------------------------------------------------- */
+
+/* Media Query */
+  @media (max-width: 768px) { /* Tablets y dispositivos más pequeños */
+    .centrarTexto {
+      font-size: 10px; /* Tamaño del texto para tablets y móviles */
+      text-align: center; /* Asegura que el texto sigue centrado */
+      margin-bottom: 5%; /* Respeta el mismo margen */
+    }
+  }
