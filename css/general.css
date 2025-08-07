@@ -10,7 +10,7 @@
   * {
   margin: 0;
   padding: 0;
-  font-family: 'Cinzel', serif;
+  font-family: 'cinzel';
   }
 
 /* --------------------------------------------------------------------------------- */
@@ -51,6 +51,10 @@
  .fondoDorado-100percent {
    background-color: #a09462;
  }
+
+ .fondoDoradoClaro-100percent {
+  background-color: #d8bd8e;
+}
 /* --------------------------------------------------------------------------------- */
 
 /* Textos */

@@ -248,3 +248,36 @@
    }
 
 /* --------------------------------------------------------------------------------- */
+
+/* Banner */
+.banner-fijo {
+   position: sticky;
+   /* top: 0; */
+   /* left: 0; */
+   width: 100%;
+   /* background-color: #002B5B; Azul profundo */
+   /* color: white; */
+   text-align: center;
+   padding: 15px 0;
+   font-size: 16px;
+   /* font-weight: bold; */
+   /* z-index: 1000; */
+   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+   font-family: 'DM Sans', sans-serif;
+ }
+
+ .banner-fijo strong {
+   font-family: 'DM Sans', sans-serif;
+ }
+
+ .banner-fijo a {
+   color: #617eac;
+   /* text-decoration: none; */
+   font-weight: bold;
+   font-family: 'DM Sans', sans-serif;
+ }
+
+ .banner-fijo a:hover {
+   text-decoration: underline;
+   color: #f9f9f9;
+ }
